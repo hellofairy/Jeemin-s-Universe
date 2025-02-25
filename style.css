@@ -219,22 +219,26 @@ footer {
   margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
   padding: 20px 0; /* 여백 추가 */
   z-index: 3;
+  margin: 0;
+  width: 100%;
 }
   
-footer p.footer-text {
-  font-size: 15px;
-  padding: 0 10px;
+.footer-text {
+  height: auto;
+  font-size: 30px;
   margin-bottom: 0;
   clear: both;
   color: white;
+  justify-content: center;
+  align-items: center; 
 }
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .contact_circle {
-    font-size: 30px;
-    height: 70px;
-    width: 70px;
+    font-size: 25px;
+    height: 90px;
+    width: 90px;
   }
 
   .circle_1 span,
@@ -271,7 +275,7 @@ footer p.footer-text {
     width: 50px;
   }
   
-  footer p.footer-text {
+  .footer-text {
     font-size: 15px;
   }
 }
@@ -279,7 +283,8 @@ footer p.footer-text {
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
   .contact_circle {
-    font-size: 30px;
+    top: 50px;
+    font-size: 40px;
     height: 150px;
     width: 150px;
   }
@@ -287,7 +292,11 @@ footer p.footer-text {
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
-  .circle_4 span,
+  .circle_4 span {
+    font-size: 50px;
+    top: -30px; /* 원의 위쪽으로 이동 */
+  }
+
   .circle_5 span {
     font-size: 30px;
     top: -20px; /* 원의 위쪽으로 이동 */
@@ -319,17 +328,19 @@ footer p.footer-text {
     width: 60px;
   }
   
-  footer p.footer-text {
-    font-size: 15px;
+  .footer-text {
+    margin-bottom: 50px;
+    font-size: 30px;
   }
 }
 
 /* 태블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
   .contact_circle {
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
+    top: 20px;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
   }
 
   .circle_1 span,
@@ -367,16 +378,17 @@ footer p.footer-text {
     width: 30px;
   }
   
-  footer p.footer-text {
-    font-size: 13px;
+  .footer-text {
+    font-size: 15px;
   }
 }
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
   .contact_circle {
-    height: 60px;
-    width: 60px;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
   }
 
   .circle_1 span,
@@ -419,8 +431,8 @@ footer p.footer-text {
     width: 40px;
   }
   
-  footer p.footer-text {
-    font-size: 13px;
+  .footer-text {
+    font-size: 15px;
   }
 }
 
