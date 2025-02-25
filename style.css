@@ -19,6 +19,35 @@ div{
   align-items: center;
 }
 
+.circle_1.hovered {
+  background-color: #ffadad;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.circle_2.hovered {
+  background-color: #ffd6a5;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.circle_3.hovered {
+  background-color: #fdffb6;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+
+.circle_4.hovered {
+  background-color: #caffbf;
+  transition: background-color 0.3s ease;
+  z-index: 4;
+}
+
+.circle_5.hovered {
+  background-color: #9bf6ff;
+  transition: background-color 0.3s ease;
+}
+
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .circle_1 span,
@@ -28,7 +57,7 @@ div{
   .circle_5 span {
     font-size: 20px;
     position: absolute;
-    top: -25px; /* 원의 위쪽으로 이동 */
+    top: -10px; /* 원의 위쪽으로 이동 */
     left: 50%;
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
@@ -140,7 +169,7 @@ div{
   .circle_5 span {
     font-size: 30px;
     position: absolute;
-    top: -25px; /* 원의 위쪽으로 이동 */
+    top: -20px; /* 원의 위쪽으로 이동 */
     left: 50%;
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
@@ -251,7 +280,7 @@ div{
   .circle_4 span,
   .circle_5 span {
     position: absolute;
-    top: -25px; /* 원의 위쪽으로 이동 */
+    top: -10px; /* 원의 위쪽으로 이동 */
     left: 50%;
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
@@ -362,7 +391,7 @@ div{
   .circle_4 span,
   .circle_5 span {
     position: absolute;
-    top: -25px; /* 원의 위쪽으로 이동 */
+    top: -10px; /* 원의 위쪽으로 이동 */
     left: 50%;
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
