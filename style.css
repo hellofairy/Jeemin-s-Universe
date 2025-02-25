@@ -394,11 +394,15 @@ footer {
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
-  .circle_4 span,
-  .circle_5 span {
+  .circle_4 span {
     font-size: 20px;
     top: -15px; /* 원의 위쪽으로 이동 */
   }
+
+  .circle_5 span {
+    font-size: 15px;
+    top: -10px; /* 원의 위쪽으로 이동 */
+  } 
 
   .contact_circle {
     height: 50px;
@@ -432,7 +436,7 @@ footer {
   }
   
   .footer-text {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 
