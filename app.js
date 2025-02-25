@@ -38,6 +38,7 @@ circle_1.addEventListener("mouseleave", () => {
 circle_2.addEventListener("mouseenter", () => {
   is_circle_2_hovered = true;
   circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_1_text.classList.remove("color_change");
   circle_2.classList.add("hovered");
   circle_3.style.zIndex = 5;
   circle_4.style.zIndex = 6;
@@ -51,6 +52,7 @@ circle_2.addEventListener("mouseleave", () => {
   // circle 2을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
   if (is_circle_1_hovered) {
     circle_1.classList.add("hovered");
+    circle_1_text.classList.add("color_change");
   }
 });
 
@@ -58,6 +60,7 @@ circle_2.addEventListener("mouseleave", () => {
 circle_3.addEventListener("mouseenter", () => {
   is_circle_3_hovered = true;
   circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_1_text.classList.remove("color_change");
   circle_2.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
   circle_3.classList.add("hovered");
   circle_4.style.zIndex = 6;
@@ -71,6 +74,7 @@ circle_3.addEventListener("mouseleave", () => {
   // circle 3을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
   if (is_circle_1_hovered) {
     circle_1.classList.add("hovered");
+    circle_1_text.classList.add("color_change");
   }
   else if (is_circle_2_hovered) {
     circle_2.classList.add("hovered");
@@ -81,6 +85,7 @@ circle_3.addEventListener("mouseleave", () => {
 circle_4.addEventListener("mouseenter", () => {
   is_circle_4_hovered = true;
   circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_1_text.classList.remove("color_change");
   circle_2.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
   circle_3.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
   circle_4.classList.add("hovered");
@@ -94,6 +99,7 @@ circle_4.addEventListener("mouseleave", () => {
   // circle 4을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
   if (is_circle_1_hovered) {
     circle_1.classList.add("hovered");
+    circle_1_text.classList.add("color_change");
   }
   else if (is_circle_2_hovered) {
     circle_2.classList.add("hovered");
@@ -107,6 +113,7 @@ circle_4.addEventListener("mouseleave", () => {
 circle_5.addEventListener("mouseenter", () => {
   is_circle_5_hovered = true;
   circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_1_text.classList.remove("color_change");
   circle_2.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
   circle_3.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
   circle_4.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
@@ -121,6 +128,7 @@ circle_5.addEventListener("mouseleave", () => {
   // circle 5을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
   if (is_circle_1_hovered) {
     circle_1.classList.add("hovered");
+    circle_1_text.classList.add("color_change");
   }
   else if (is_circle_2_hovered) {
     circle_2.classList.add("hovered");
