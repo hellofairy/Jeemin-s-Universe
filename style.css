@@ -131,6 +131,18 @@ div{
   transition: background-color 0.3s ease;
 }
 
+.circle_1 span,
+.circle_2 span,
+.circle_3 span,
+.circle_4 span,
+.circle_5 span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+}
+
 footer {
   margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
   padding: 20px 0; /* 여백 추가 */
@@ -151,12 +163,7 @@ footer p.footer-text {
   .circle_4 span,
   .circle_5 span {
     font-size: 20px;
-    position: absolute;
     top: -10px; /* 원의 위쪽으로 이동 */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    white-space: nowrap;
   }
   
   .circle_1 {
@@ -196,13 +203,8 @@ footer p.footer-text {
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    font-size: 30px;
-    position: absolute;
-    top: -20px; /* 원의 위쪽으로 이동 */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    white-space: nowrap;
+    font-size: 20px;
+    top: -15px; /* 원의 위쪽으로 이동 */
   }
   
   .circle_1 {
@@ -230,13 +232,8 @@ footer p.footer-text {
     width: 60px;
   }
   
-  footer {
-    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-    padding: 20px 0; /* 여백 추가 */
-  }
-  
   footer p.footer-text {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -247,12 +244,8 @@ footer p.footer-text {
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    position: absolute;
-    top: -10px; /* 원의 위쪽으로 이동 */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    white-space: nowrap;
+    font-size: 20px;
+    top: -15px; /* 원의 위쪽으로 이동 */
   }
   
   .circle_1 {
@@ -280,11 +273,6 @@ footer p.footer-text {
     width: 30px;
   }
   
-  footer {
-    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-    padding: 20px 0; /* 여백 추가 */
-  }
-  
   footer p.footer-text {
     font-size: 13px;
   }
@@ -297,12 +285,8 @@ footer p.footer-text {
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    position: absolute;
-    top: -10px; /* 원의 위쪽으로 이동 */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    white-space: nowrap;
+    font-size: 20px;
+    top: -15px; /* 원의 위쪽으로 이동 */
   }
   
   .circle_1 {
@@ -328,11 +312,6 @@ footer p.footer-text {
   .circle_5 {
     height: 40px;  /* 크기 조정 */
     width: 40px;
-  }
-  
-  footer {
-    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-    padding: 20px 0; /* 여백 추가 */
   }
   
   footer p.footer-text {
