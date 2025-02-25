@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1rem;
 }
 
 body {
@@ -20,109 +19,448 @@ div{
   align-items: center;
 }
 
-.circle_1 span,
-.circle_2 span,
-.circle_3 span,
-.circle_4 span,
-.circle_5 span {
-  position: absolute;
-  top: -10px; /* 원의 위쪽으로 이동 */
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgb(255, 255, 255);
-  white-space: nowrap;
+/* 모바일 */
+@media (min-width: 0px) and (max-width: 767px) {
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span,
+  .circle_5 span {
+    font-size: 20px;
+    position: absolute;
+    top: -25px; /* 원의 위쪽으로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+  }
+  
+  .circle_1 {
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  }
+  
+  .circle_2 {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 배치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+  }
+  
+  .circle_3 {
+    height: 500px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 500px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+  }
+  
+  .circle_4 {
+    height: 400px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 400px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+  }
+  
+  .circle_5 {
+    height: 60px;  /* 크기 조정 */
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+  }
+  
+  footer {
+    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+    padding: 20px 0; /* 여백 추가 */
+  }
+  
+  footer p.footer-text {
+    padding: 0 10px;
+    margin-bottom: 0;
+    clear: both;
+    color: white;
+    font-size: 10px;
+  }
 }
 
-.circle_1 {
-  height: 70vh;
-  width: 70vh;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
-
-  -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+/* 태블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span,
+  .circle_5 span {
+    font-size: 30px;
+    position: absolute;
+    top: -25px; /* 원의 위쪽으로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+  }
+  
+  .circle_1 {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  }
+  
+  .circle_2 {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 배치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+  }
+  
+  .circle_3 {
+    height: 400px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 400px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+  }
+  
+  .circle_4 {
+    height: 300px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 300px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+  }
+  
+  .circle_5 {
+    height: 60px;  /* 크기 조정 */
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+  }
+  
+  footer {
+    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+    padding: 20px 0; /* 여백 추가 */
+  }
+  
+  footer p.footer-text {
+    padding: 0 10px;
+    margin-bottom: 0;
+    clear: both;
+    color: white;
+    font-size: 20px;
+  }
 }
 
-.circle_2 {
-  height: 60vh;
-  width: 60vh;
-  border-radius: 50%;
-  position: absolute;  /* 부모 기준으로 배치 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-
-  -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+/* 태블릿 가로 */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span,
+  .circle_5 span {
+    position: absolute;
+    top: -25px; /* 원의 위쪽으로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+  }
+  
+  .circle_1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  }
+  
+  .circle_2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 배치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+  }
+  
+  .circle_3 {
+    height: 200px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 200px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+  }
+  
+  .circle_4 {
+    height: 100px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 100px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+  }
+  
+  .circle_5 {
+    height: 30px;  /* 크기 조정 */
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+  }
+  
+  footer {
+    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+    padding: 20px 0; /* 여백 추가 */
+  }
+  
+  footer p.footer-text {
+    padding: 0 10px;
+    margin-bottom: 0;
+    clear: both;
+    color: white;
+    font-size: 13px;
+  }
 }
 
-.circle_3 {
-  height: 50vh;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-  width: 50vh;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-  border-radius: 50%;
-  position: absolute;  /* 부모 기준으로 위치 설정 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-
-  -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
-}
-
-.circle_4 {
-  height: 40vh;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-  width: 40vh;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-  border-radius: 50%;
-  position: absolute;  /* 부모 기준으로 위치 설정 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-
-  -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
-}
-
-.circle_5 {
-  height: 5vh;  /* 크기 조정 */
-  width: 5vh;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-
-  -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
-}
-
-footer {
-  margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-  padding: 20px 0; /* 여백 추가 */
-}
-
-footer p.footer-text {
-  padding: 0 10px;
-  margin-bottom: 0;
-  clear: both;
-  color: white;
+/* 데스크탑 일반 */
+@media (min-width: 1200px) {
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span,
+  .circle_5 span {
+    position: absolute;
+    top: -25px; /* 원의 위쪽으로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+  }
+  
+  .circle_1 {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  }
+  
+  .circle_2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 배치 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+  }
+  
+  .circle_3 {
+    height: 300px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 300px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+  }
+  
+  .circle_4 {
+    height: 200px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 200px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    border-radius: 50%;
+    position: absolute;  /* 부모 기준으로 위치 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+  }
+  
+  .circle_5 {
+    height: 40px;  /* 크기 조정 */
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+    -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
+    -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+    box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+  }
+  
+  footer {
+    margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+    padding: 20px 0; /* 여백 추가 */
+  }
+  
+  footer p.footer-text {
+    padding: 0 10px;
+    margin-bottom: 0;
+    clear: both;
+    color: white;
+    font-size: 13px;
+  }
 }
