@@ -29,31 +29,31 @@ div{
 }
 
 .circle_1.hovered {
-  background-color: #ffadad;
+  background-color: rgba(255,173,173,0.3);
   transition: background-color 0.3s ease;
   z-index: 1;
 }
 
 .circle_2.hovered {
-  background-color: #ffd6a5;
+  background-color: rgba(255,214,165,0.3);
   transition: background-color 0.3s ease;
   z-index: 2;
 }
 
 .circle_3.hovered {
-  background-color: #fdffb6;
+  background-color: rgba(253,255,182,0.3);
   transition: background-color 0.3s ease;
   z-index: 3;
 }
 
 .circle_4.hovered {
-  background-color: #caffbf;
+  background-color: rgba(202,255,191,0.3);
   transition: background-color 0.3s ease;
   z-index: 4;
 }
 
 .circle_5.hovered {
-  background-color: #9bf6ff;
+  background-color: rgba(155,246,255,0.3);
   transition: background-color 0.3s ease;
 }
 
