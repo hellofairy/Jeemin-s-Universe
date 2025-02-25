@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000000;
+  flex-direction: column; /* 부모가 세로 방향으로 자식 요소를 배치 */
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;  
@@ -24,10 +25,27 @@ div{
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;  
-  box-sizing: border-box; 
+header {
+  margin-bottom: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+  padding: 30px 0; /* 여백 추가 */
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  color: #8284ff;
+
+  -webkit-box-shadow:0px 0px 30px 5px rgba(189,190,255,0.88);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
+  box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
 }
 
 .circle_0 {
@@ -56,7 +74,6 @@ div{
   position: absolute;  /* 부모 기준으로 배치 */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -71,7 +88,6 @@ div{
   position: absolute;  /* 부모 기준으로 위치 설정 */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -86,7 +102,6 @@ div{
   position: absolute;  /* 부모 기준으로 위치 설정 */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* 정확히 가운데 배치 */
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -101,7 +116,6 @@ div{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -115,25 +129,25 @@ div{
 .circle_1.hovered {
   background-color: rgba(255,173,173,0.3);
   transition: background-color 0.3s ease;
-  z-index: 1;
+  z-index: 5;
 }
 
 .circle_2.hovered {
   background-color: rgba(255,214,165,0.3);
   transition: background-color 0.3s ease;
-  z-index: 2;
+  z-index: 6;
 }
 
 .circle_3.hovered {
   background-color: rgba(253,255,182,0.3);
   transition: background-color 0.3s ease;
-  z-index: 3;
+  z-index: 7;
 }
 
 .circle_4.hovered {
   background-color: rgba(202,255,191,0.3);
   transition: background-color 0.3s ease;
-  z-index: 4;
+  z-index: 8;
 }
 
 .circle_5.hovered {
@@ -160,6 +174,7 @@ footer {
 }
   
 footer p.footer-text {
+  font-size: 15px;
   padding: 0 10px;
   margin-bottom: 0;
   clear: both;
@@ -168,54 +183,66 @@ footer p.footer-text {
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
+  .contact_circle {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+  }
+
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    font-size: 20px;
-    top: -10px; /* 원의 위쪽으로 이동 */
+    font-size: 25px;
+    top: -15px; /* 원의 위쪽으로 이동 */
   }
 
   .circle_0, .circle_1 {
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
   }
   
   .circle_2 {
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
   }
   
   .circle_3 {
-    height: 500px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 500px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 300px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 300px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
   }
   
   .circle_4 {
-    height: 400px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 400px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 200px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    width: 200px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
   }
   
   .circle_5 {
-    height: 60px;  /* 크기 조정 */
-    width: 60px;
+    height: 50px;  /* 크기 조정 */
+    width: 50px;
   }
   
   footer p.footer-text {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
+  .contact_circle {
+    font-size: 30px;
+    height: 150px;
+    width: 150px;
+  }
+
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    font-size: 20px;
-    top: -15px; /* 원의 위쪽으로 이동 */
+    font-size: 30px;
+    top: -20px; /* 원의 위쪽으로 이동 */
   }
   
   .circle_0,
@@ -251,6 +278,11 @@ footer p.footer-text {
 
 /* 태블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .contact_circle {
+    height: 40px;
+    width: 40px;
+  }
+
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
@@ -293,6 +325,11 @@ footer p.footer-text {
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
+  .contact_circle {
+    height: 40px;
+    width: 40px;
+  }
+
   .circle_1 span,
   .circle_2 span,
   .circle_3 span,
@@ -300,6 +337,11 @@ footer p.footer-text {
   .circle_5 span {
     font-size: 20px;
     top: -15px; /* 원의 위쪽으로 이동 */
+  }
+
+  .contact_circle {
+    height: 50px;
+    width: 50px;
   }
 
   .circle_0,
