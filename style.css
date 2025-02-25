@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Seen', 'strikethrough';
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 body {
@@ -14,7 +15,22 @@ body {
 }
 
 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.circle_1 span,
+.circle_2 span,
+.circle_3 span,
+.circle_4 span,
+.circle_5 span {
+  position: absolute;
+  top: -10px; /* 원의 위쪽으로 이동 */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
 }
 
 .circle_1 {
@@ -24,7 +40,7 @@ div{
   display: flex;
   justify-content: center;
   align-items: center; 
-  position: relative;  /* 부모 원을 기준으로 위치 설정 */
+  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
 
   -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
   -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
@@ -90,9 +106,23 @@ div{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 
   -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
   -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
   box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
 }
 
+footer {
+  margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
+  padding: 20px 0; /* 여백 추가 */
+}
+
+footer p.footer-text {
+  padding: 0 10px;
+  margin-bottom: 0;
+  clear: both;
+  color: white;
+}
