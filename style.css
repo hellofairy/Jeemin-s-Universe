@@ -21,10 +21,16 @@ body {
   box-sizing: border-box; 
 }
 
-div{
+a, div{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 header {

@@ -15,7 +15,6 @@ let is_circle_3_hovered = false;
 let is_circle_4_hovered = false;
 let is_circle_5_hovered = false;
 
-
 // circle 1에 마우스를 올릴 때
 circle_1.addEventListener("mouseenter", () => {
   if (!is_circle_1_hovered) {
@@ -140,6 +139,36 @@ circle_5.addEventListener("mouseleave", () => {
     circle_4.classList.add("hovered");
   }
 });
+
+// circle_1 클릭 시 me.html로 이동
+circle_1.addEventListener('click', function() {
+  window.location.href = 'me.html';
+});
+
+// circle_2 클릭 시 activities.html로 이동
+circle_2.addEventListener('click', function(event) {
+  event.stopPropagation(); // 부모의 클릭 이벤트를 막음
+  window.location.href = 'activities.html';
+});
+
+// circle_3 클릭 시 skills.html로 이동
+circle_3.addEventListener('click', function(event) {
+  event.stopPropagation(); // 부모의 클릭 이벤트를 막음
+  window.location.href = 'skills.html';
+});
+
+// circle_4 클릭 시 craft.html로 이동
+circle_4.addEventListener('click', function(event) {
+  event.stopPropagation(); // 부모의 클릭 이벤트를 막음
+  window.location.href = 'craft.html';
+});
+
+// circle_3 클릭 시 skills.html로 이동
+circle_5.addEventListener('click', function(event) {
+  event.stopPropagation(); // 부모의 클릭 이벤트를 막음
+  window.location.href = 'peanut.html';
+});
+
 
 function animate() {
     const circle_1_Radius = circle_1.offsetWidth / 2;  // 바깥 원의 반지름
