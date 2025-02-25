@@ -1,9 +1,10 @@
 
-const circle_1 = document.querySelector('.circle_1');
-const circle_2 = document.querySelector('.circle_2');
-const circle_3 = document.querySelector('.circle_3');
-const circle_4 = document.querySelector('.circle_4');
-const circle_5 = document.querySelector('.circle_5'); // 새로운 원 추가
+const contact_circle = document.querySelector('.contact_circle'); //연락
+const circle_1 = document.querySelector('.circle_1'); //소개
+const circle_2 = document.querySelector('.circle_2'); //활동
+const circle_3 = document.querySelector('.circle_3'); //스킬
+const circle_4 = document.querySelector('.circle_4'); //작품
+const circle_5 = document.querySelector('.circle_5'); //땅콩
 
 const circle_1_text = document.querySelector('.circle_1_text');
 
@@ -140,6 +141,12 @@ circle_5.addEventListener("mouseleave", () => {
   }
 });
 
+// contact_circle 클릭 시 contact.html로 이동
+contact_circle.addEventListener('click', function(event) {
+  event.stopPropagation(); // 부모의 클릭 이벤트를 막음
+  window.location.href = 'contact.html';
+});
+
 // circle_1 클릭 시 me.html로 이동
 circle_1.addEventListener('click', function() {
   window.location.href = 'me.html';
@@ -163,7 +170,7 @@ circle_4.addEventListener('click', function(event) {
   window.location.href = 'craft.html';
 });
 
-// circle_3 클릭 시 skills.html로 이동
+// circle_5 클릭 시 peanut.html로 이동
 circle_5.addEventListener('click', function(event) {
   event.stopPropagation(); // 부모의 클릭 이벤트를 막음
   window.location.href = 'peanut.html';
