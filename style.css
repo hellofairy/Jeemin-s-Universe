@@ -48,6 +48,14 @@ header {
   box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
 }
 
+.contact_circle:hover {
+  background-color: rgba(189,190,255,0.6);
+  transition: background-color 0.3s ease;
+  z-index: 8;
+
+  color: white;
+}
+
 .circle_0 {
   border-radius: 50%;
   display: flex;
@@ -132,10 +140,18 @@ header {
   z-index: 5;
 }
 
+.circle_1_text.color_change {
+  color: white;
+}
+
 .circle_2.hovered {
   background-color: rgba(255,214,165,0.3);
   transition: background-color 0.3s ease;
   z-index: 6;
+}
+
+.circle_2.hovered span {
+  color: white;
 }
 
 .circle_3.hovered {
@@ -144,15 +160,28 @@ header {
   z-index: 7;
 }
 
+.circle_3.hovered span {
+  color: white;
+}
+
 .circle_4.hovered {
   background-color: rgba(202,255,191,0.3);
   transition: background-color 0.3s ease;
   z-index: 8;
 }
 
+.circle_4.hovered span {
+  color: white;
+}
+
 .circle_5.hovered {
   background-color: rgba(155,246,255,0.3);
   transition: background-color 0.3s ease;
+  color: white;
+}
+
+.circle_5.hovered span {
+  color: white;
 }
 
 .circle_1 span,
@@ -161,11 +190,30 @@ header {
 .circle_4 span,
 .circle_5 span {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   color: rgb(255, 255, 255);
   white-space: nowrap;
 }
+
+.circle_1 span {
+  color: #ffadad;
+}
+
+.circle_2 span {
+  color: #ffd6A5;
+}
+
+.circle_3 span {
+  color: #fDffb6;
+}
+
+.circle_4 span {
+  color: #caffbf;
+}
+
+.circle_5 span {
+  color: #9bf6ff;
+}
+
 
 footer {
   margin-top: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */

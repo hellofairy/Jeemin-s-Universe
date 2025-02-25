@@ -4,6 +4,9 @@ const circle_2 = document.querySelector('.circle_2');
 const circle_3 = document.querySelector('.circle_3');
 const circle_4 = document.querySelector('.circle_4');
 const circle_5 = document.querySelector('.circle_5'); // 새로운 원 추가
+
+const circle_1_text = document.querySelector('.circle_1_text');
+
 let angle = 0;  // 초기 각도
 
 let is_circle_1_hovered = false;
@@ -15,8 +18,9 @@ let is_circle_5_hovered = false;
 
 // circle 1에 마우스를 올릴 때
 circle_1.addEventListener("mouseenter", () => {
-  if (!is_circle_2_hovered) {
+  if (!is_circle_1_hovered) {
     circle_1.classList.add("hovered");
+    circle_1_text.classList.add("color_change");
     is_circle_1_hovered = true;
   }
 });
@@ -25,6 +29,7 @@ circle_1.addEventListener("mouseenter", () => {
 circle_1.addEventListener("mouseleave", () => {
   if (!is_circle_2_hovered) {
     circle_1.classList.remove("hovered");
+    circle_1_text.classList.remove("color_change");
     is_circle_1_hovered = false;
   }
 });
@@ -133,7 +138,7 @@ function animate() {
     const circle_2_Radius = circle_2.offsetWidth / 2;  // 안쪽 원의 반지름
     const circle_3_Radius = circle_3.offsetWidth / 2;  // 안쪽 원의 반지름
     const circle_4_Radius = circle_4.offsetWidth / 2;  // 안쪽 원의 반지름
-    const circle_5_OrbitRadius = circle_1_Radius * 1.2;  // circle_5가 공전할 거리 (조정 가능)
+    const circle_5_OrbitRadius = circle_1_Radius * 1.15;  // circle_5가 공전할 거리 (조정 가능)
 
     // 회전 반지름 조정
     const distance = circle_1_Radius - circle_2_Radius;
