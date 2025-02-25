@@ -30,6 +30,15 @@ div{
   box-sizing: border-box; 
 }
 
+.circle_0 {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  background-color: black;
+}
+
 .circle_1 {
   border-radius: 50%;
   display: flex;
@@ -96,6 +105,7 @@ div{
   display: flex;
   justify-content: center;
   align-items: center; 
+  background-color: black;
 
   -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
   -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
@@ -166,8 +176,8 @@ footer p.footer-text {
     font-size: 20px;
     top: -10px; /* 원의 위쪽으로 이동 */
   }
-  
-  .circle_1 {
+
+  .circle_0, .circle_1 {
     height: 700px;
     width: 700px;
   }
@@ -208,6 +218,7 @@ footer p.footer-text {
     top: -15px; /* 원의 위쪽으로 이동 */
   }
   
+  .circle_0,
   .circle_1 {
     height: 600px;
     width: 600px;
@@ -249,6 +260,7 @@ footer p.footer-text {
     top: -15px; /* 원의 위쪽으로 이동 */
   }
   
+  .circle_0,
   .circle_1 {
     height: 400px;
     width: 400px;
@@ -289,7 +301,8 @@ footer p.footer-text {
     font-size: 20px;
     top: -15px; /* 원의 위쪽으로 이동 */
   }
-  
+
+  .circle_0,
   .circle_1 {
     height: 500px;
     width: 500px;
