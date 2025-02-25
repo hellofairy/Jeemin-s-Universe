@@ -6,6 +6,96 @@ const circle_4 = document.querySelector('.circle_4');
 const circle_5 = document.querySelector('.circle_5'); // 새로운 원 추가
 let angle = 0;  // 초기 각도
 
+let is_circle_1_hovered = false;
+let is_circle_2_hovered = false;
+let is_circle_3_hovered = false;
+let is_circle_4_hovered = false;
+
+// circle 1에 마우스를 올릴 때
+circle_1.addEventListener("mouseenter", () => {
+  if (!is_circle_2_hovered) {
+    circle_1.classList.add("hovered");
+    is_circle_1_hovered = true;
+  }
+});
+
+// circle1 1에서 마우스를 뗄 때
+circle_1.addEventListener("mouseleave", () => {
+  if (!is_circle_2_hovered) {
+    circle_1.classList.remove("hovered");
+    is_circle_1_hovered = false;
+  }
+});
+
+// circle 2에 마우스를 올릴 때
+circle_2.addEventListener("mouseenter", () => {
+  is_circle_2_hovered = true;
+  circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_2.classList.add("hovered");
+  circle_3.style.zIndex = 5;
+  circle_4.style.zIndex = 6;
+});
+
+// circle 2에서 마우스를 뗄 때
+circle_2.addEventListener("mouseleave", () => {
+  is_circle_2_hovered = false;
+  circle_2.classList.remove("hovered");
+
+  // circle 2을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
+  if (is_circle_1_hovered) {
+    circle_1.classList.add("hovered");
+  }
+});
+
+// circle 3에 마우스를 올릴 때
+circle_3.addEventListener("mouseenter", () => {
+  is_circle_3_hovered = true;
+  circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_2.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_3.classList.add("hovered");
+  circle_4.style.zIndex = 6;
+});
+
+// circle 3에서 마우스를 뗄 때
+circle_3.addEventListener("mouseleave", () => {
+  is_circle_3_hovered = false;
+  circle_3.classList.remove("hovered");
+
+  // circle 3을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
+  if (is_circle_1_hovered) {
+    circle_1.classList.add("hovered");
+  }
+  else if (is_circle_2_hovered) {
+    circle_2.classList.add("hovered");
+  }
+});
+
+// circle 4에 마우스를 올릴 때
+circle_4.addEventListener("mouseenter", () => {
+  is_circle_4_hovered = true;
+  circle_1.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_2.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_3.classList.remove("hovered"); // 바깥 원의 hover 상태를 즉시 제거
+  circle_4.classList.add("hovered");
+});
+
+// circle 4에서 마우스를 뗄 때
+circle_4.addEventListener("mouseleave", () => {
+  is_circle_4_hovered = false;
+  circle_4.classList.remove("hovered");
+
+  // circle 4을 떠났을 때, 바깥 원이 hover 상태면 다시 반영
+  if (is_circle_1_hovered) {
+    circle_1.classList.add("hovered");
+  }
+  else if (is_circle_2_hovered) {
+    circle_2.classList.add("hovered");
+  }
+  else if (is_circle_3_hovered) {
+    circle_3.classList.add("hovered");
+  }
+});
+
 function animate() {
     const circle_1_Radius = circle_1.offsetWidth / 2;  // 바깥 원의 반지름
     const circle_2_Radius = circle_2.offsetWidth / 2;  // 안쪽 원의 반지름
