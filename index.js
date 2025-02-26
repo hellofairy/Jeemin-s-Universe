@@ -217,7 +217,17 @@ function animate() {
 animate();  // 애니메이션 시작
 
 
-// 마우스 커서
+// 커비 마우스 커서
+document.addEventListener("DOMContentLoaded", function () {
+  const cursor = document.getElementById("cursor");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+  });
+});
+
+// 반짝이 마우스 커서 trail
 const star = [];
 const star_x = [];
 const star_y = [];

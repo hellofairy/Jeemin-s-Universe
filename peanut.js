@@ -7,6 +7,16 @@ index_circle.addEventListener('click', function(event) {
   window.location.href = 'index.html';
 });
 
+// 커비 마우스 커서
+document.addEventListener("DOMContentLoaded", function () {
+  const cursor = document.getElementById("cursor");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+  });
+});
+
 // 마우스 커서
 const star = [];
 const star_x = [];

@@ -26,6 +26,18 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;  
   box-sizing: border-box; 
+  
+  /* 마우스 커서 */
+  cursor: none; /* 기본 커서 숨기기 */
+}
+
+/* 커비 마우스 커서 */
+.custom-cursor {
+  position: absolute;
+  width: 32px; /* GIF 크기에 맞게 조절 */
+  height: 32px;
+  pointer-events: none; /* 클릭 방지 */
+  z-index: 9999;
 }
 
 a, div{
@@ -561,12 +573,12 @@ footer {
 }
 
 .stars {
-  background:#000 url(stars.png) repeat top center;
+  background:#000 url(images/stars.png) repeat top center;
   z-index:-1;
 }
 
 .twinkling{
-  background:transparent url(twinkling.png) repeat top center;
+  background:transparent url(images/twinkling.png) repeat top center;
   z-index:0;
   animation:move-twink-back 200s linear infinite;
 }
