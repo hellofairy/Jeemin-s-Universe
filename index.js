@@ -189,7 +189,7 @@ function animate() {
     const distance_2 = circle_1_Radius - circle_3_Radius;
     const distance_3 = circle_1_Radius - circle_4_Radius;
 
-    angle += 0.003;  // 회전 속도 조절
+    angle += 0.006;  // 회전 속도 조절
 
     // 바깥 원의 반지름에 맞게 안쪽 원의 위치 계산
     const x = distance * Math.cos(angle);
