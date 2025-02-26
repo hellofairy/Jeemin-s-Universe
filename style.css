@@ -1,3 +1,5 @@
+/* index.html */
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +54,20 @@ header {
   -webkit-box-shadow:0px 0px 30px 5px rgba(189,190,255,0.88);
   -moz-box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
   box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
+
+  /* 글로우 효과 */
+  -webkit-animation: contact_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: contact_glowing 1s ease-in-out infinite alternate;
+  animation: contact_glowing 1s ease-in-out infinite alternate;  
+}
+
+@-webkit-keyframes contact_glowing {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bdb2ff, 0 0 20px #bdb2ff, 0 0 25px #816bff, 0 0 30px #816bff, 0 0 35px #816bff;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 15px #816bff, 0 0 20px #816bff, 0 0 25px #816bff, 0 0 30px #816bff, 0 0 35px #816bff, 0 0 40px #816bff;
+  }
 }
 
 .contact_circle:hover {
@@ -472,4 +488,96 @@ footer {
   background:transparent url(twinkling.png) repeat top center;
   z-index:0;
   animation:move-twink-back 200s linear infinite;
+}
+
+
+/* jeemin.html */
+.index_circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  color: #ffadad;
+
+  -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
+  -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+
+  /* 글로우 효과 */
+  -webkit-animation: index_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: index_glowing 1s ease-in-out infinite alternate;
+  animation: index_glowing 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes index_glowing {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffadad, 0 0 20px #ffd2d2, 0 0 25px #ff8484, 0 0 30px #ff8484, 0 0 35px #ff8484;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 15px #ff8484, 0 0 20px #ff8484, 0 0 25px #ff8484, 0 0 30px #ff8484, 0 0 35px #ff8484, 0 0 40px #ff8484;
+  }
+}
+
+.index_circle:hover {
+  background-color: rgba(255,173,173,0.6);
+  transition: background-color 0.3s ease;
+  z-index: 8;
+
+  color: white;
+}
+
+/* 모바일 */
+@media (min-width: 0px) and (max-width: 767px) {
+  .index_circle {
+    font-size: 25px;
+    height: 90px;
+    width: 90px;
+  }
+  
+  .footer-text {
+    font-size: 15px;
+  }
+}
+
+/* 태블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .index_circle {
+    top: 50px;
+    font-size: 40px;
+    height: 150px;
+    width: 150px;
+  }
+\  .footer-text {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+}
+
+/* 태블릿 가로 */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .index_circle {
+    top: 20px;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+  }
+  
+  .footer-text {
+    font-size: 15px;
+  }
+}
+
+/* 데스크탑 일반 */
+@media (min-width: 1200px) {
+  .index_circle {
+    top: 20px;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+  }
 }

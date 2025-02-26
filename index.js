@@ -1,4 +1,4 @@
-
+// index.html
 const contact_circle = document.querySelector('.contact_circle'); //연락
 const circle_1 = document.querySelector('.circle_1'); //소개
 const circle_2 = document.querySelector('.circle_2'); //활동
@@ -147,9 +147,9 @@ contact_circle.addEventListener('click', function(event) {
   window.location.href = 'contact.html';
 });
 
-// circle_1 클릭 시 me.html로 이동
+// circle_1 클릭 시 jeemin.html로 이동
 circle_1.addEventListener('click', function() {
-  window.location.href = 'me.html';
+  window.location.href = 'jeemin.html';
 });
 
 // circle_2 클릭 시 activities.html로 이동
