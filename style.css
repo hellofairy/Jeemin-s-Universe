@@ -1,4 +1,9 @@
 /* index.html */
+:root {
+  --circle_effect_opacity_before: 0.7;
+  --circle_effect_opacity_after: 0.88;
+  --circle_effect_opacity_full: 1;
+}
 
 * {
   margin: 0;
@@ -51,10 +56,6 @@ header {
   position: absolute;  /* 부모 원을 기준으로 위치 설정 */
   color: #8284ff;
 
-  -webkit-box-shadow:0px 0px 30px 5px rgba(189,190,255,0.88);
-  -moz-box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
-  box-shadow: 0px 0px 30px 5px rgba(189,190,255,0.88);
-
   /* 글로우 효과 */
   -webkit-animation: contact_glowing 1s ease-in-out infinite alternate;
   -moz-animation: contact_glowing 1s ease-in-out infinite alternate;
@@ -63,10 +64,14 @@ header {
 
 @-webkit-keyframes contact_glowing {
   from {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bdb2ff, 0 0 20px #bdb2ff, 0 0 25px #816bff, 0 0 30px #816bff, 0 0 35px #816bff;
+    -webkit-box-shadow:0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_after));
   }
   to {
-    box-shadow: 0 0 10px #fff, 0 0 15px #816bff, 0 0 20px #816bff, 0 0 25px #816bff, 0 0 30px #816bff, 0 0 35px #816bff, 0 0 40px #816bff;
+    -webkit-box-shadow:0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_full));
+    -moz-box-shadow: 0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_full));
+    box-shadow: 0px 0px 30px 5px rgba(189,190,255,var(--circle_effect_opacity_full));
   }
 }
 
@@ -94,9 +99,23 @@ header {
   align-items: center; 
   position: absolute;  /* 부모 원을 기준으로 위치 설정 */
 
-  -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
+  /* 글로우 효과 */
+  -webkit-animation: circle_1_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: circle_1_glowing 1s ease-in-out infinite alternate;
+  animation: circle_1_glowing 1s ease-in-out infinite alternate;    
+}
+
+@-webkit-keyframes circle_1_glowing {
+  from {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_before));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_before));
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_before));
+  }
+  to {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
+     box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
+  }
 }
 
 .circle_2 {
@@ -108,9 +127,23 @@ header {
   justify-content: center;
   align-items: center; 
 
-  -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(255,215,165,0.88);
+  /* 글로우 효과 */
+  -webkit-animation: circle_2_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: circle_2_glowing 1s ease-in-out infinite alternate;
+  animation: circle_2_glowing 1s ease-in-out infinite alternate;   
+}
+
+@-webkit-keyframes circle_2_glowing {
+  from {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_before));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_before));
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_before));
+  }
+  to {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(255,215,165,var(--circle_effect_opacity_after));
+  }
 }
 
 .circle_3 {
@@ -122,9 +155,24 @@ header {
   justify-content: center;
   align-items: center; 
 
-  -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(253,255,182,0.88);
+  /* 글로우 효과 */
+  -webkit-animation: circle_3_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: circle_3_glowing 1s ease-in-out infinite alternate;
+  animation: circle_3_glowing 1s ease-in-out infinite alternate;    
+}
+
+@-webkit-keyframes circle_3_glowing {
+  from {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_before));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_before));
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_before));  
+  }
+  to {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(253,255,182,var(--circle_effect_opacity_after));
+  
+  }
 }
 
 .circle_4 {
@@ -136,9 +184,24 @@ header {
   justify-content: center;
   align-items: center; 
 
-  -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(202,255,191,0.88);
+  /* 글로우 효과 */
+  -webkit-animation: circle_4_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: circle_4_glowing 1s ease-in-out infinite alternate;
+  animation: circle_4_glowing 1s ease-in-out infinite alternate;    
+}
+
+@-webkit-keyframes circle_4_glowing {
+  from {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_before));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_before));
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_before));
+  }
+  to {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(202,255,191,var(--circle_effect_opacity_after));
+  
+  }
 }
 
 .circle_5 {
@@ -154,6 +217,24 @@ header {
   -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,0.88);
   -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
   box-shadow: 0px 0px 57px 3px rgba(155,247,255,0.88);
+
+  /* 글로우 효과 */
+  -webkit-animation: circle_5_glowing 1s ease-in-out infinite alternate;
+  -moz-animation: circle_5_glowing 1s ease-in-out infinite alternate;
+  animation: circle_5_glowing 1s ease-in-out infinite alternate;    
+}
+
+@-webkit-keyframes circle_5_glowing {
+  from {
+    -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_after));
+  }
+  to {
+  -webkit-box-shadow:0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_full));
+  -moz-box-shadow: 0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_full));
+  box-shadow: 0px 0px 57px 3px rgba(155,247,255,var(--circle_effect_opacity_full));
+  }
 }
 
 .circle_1.hovered {
@@ -500,10 +581,6 @@ footer {
   position: absolute;  /* 부모 원을 기준으로 위치 설정 */
   color: #ffadad;
 
-  -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,0.88);
-  -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
-  box-shadow: 0px 0px 57px 3px rgba(255,173,173,0.88);
-
   /* 글로우 효과 */
   -webkit-animation: index_glowing 1s ease-in-out infinite alternate;
   -moz-animation: index_glowing 1s ease-in-out infinite alternate;
@@ -512,10 +589,14 @@ footer {
 
 @-webkit-keyframes index_glowing {
   from {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffadad, 0 0 20px #ffd2d2, 0 0 25px #ff8484, 0 0 30px #ff8484, 0 0 35px #ff8484;
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173var(--circle_effect_opacity_after));
   }
   to {
-    box-shadow: 0 0 10px #fff, 0 0 15px #ff8484, 0 0 20px #ff8484, 0 0 25px #ff8484, 0 0 30px #ff8484, 0 0 35px #ff8484, 0 0 40px #ff8484;
+    -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
+    -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
+     box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
   }
 }
 
