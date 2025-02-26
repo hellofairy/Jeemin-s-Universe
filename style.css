@@ -22,6 +22,7 @@ body {
   align-items: center;
   background-color: #000000;
   flex-direction: column; /* 부모가 세로 방향으로 자식 요소를 배치 */
+  overflow: hidden; /* 스크롤 방지 */
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;  
@@ -33,7 +34,7 @@ body {
 
 /* 커비 마우스 커서 */
 .custom-cursor {
-  position: absolute;
+  position: fixed;
   width: 32px; /* GIF 크기에 맞게 조절 */
   height: 32px;
   pointer-events: none; /* 클릭 방지 */
