@@ -591,7 +591,7 @@ footer {
   from {
     -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
     -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_after));
-    box-shadow: 0px 0px 57px 3px rgba(255,173,173var(--circle_effect_opacity_after));
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173, var(--circle_effect_opacity_after));
   }
   to {
     -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
