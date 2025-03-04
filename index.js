@@ -8,7 +8,9 @@ const circle_5 = document.querySelector('.circle_5'); //땅콩
 
 const circle_1_text = document.querySelector('.circle_1_text');
 
-let angle = 0;  // 초기 각도
+let angle_1 = Math.random() * Math.PI * 2;  // 초기 각도
+let angle_2 = Math.random() * Math.PI * 2;  // 초기 각도
+let angle_3 = Math.random() * Math.PI * 2;  // 초기 각도
 
 let is_circle_1_hovered = false;
 let is_circle_2_hovered = false;
@@ -177,6 +179,7 @@ circle_5.addEventListener('click', function(event) {
 });
 
 
+// 돌아가는 원 관련
 function animate() {
     const circle_1_Radius = circle_1.offsetWidth / 2;  // 바깥 원의 반지름
     const circle_2_Radius = circle_2.offsetWidth / 2;  // 안쪽 원의 반지름
@@ -189,17 +192,20 @@ function animate() {
     const distance_2 = circle_1_Radius - circle_3_Radius;
     const distance_3 = circle_1_Radius - circle_4_Radius;
 
-    angle += 0.006;  // 회전 속도 조절
+    // 각 원마다 다른 속도로 회전
+    angle_1 += 0.006 + Math.random() * 0.002;
+    angle_2 += 0.005 + Math.random() * 0.002;
+    angle_3 += 0.004 + Math.random() * 0.002;
 
     // 바깥 원의 반지름에 맞게 안쪽 원의 위치 계산
-    const x = distance * Math.cos(angle);
-    const y = distance * Math.sin(angle);
+    const x = distance * Math.cos(angle_1);
+    const y = distance * Math.sin(angle_1);
 
-    const x2 = distance_2 * Math.cos(angle);
-    const y2 = distance_2 * Math.sin(angle);
+    const x2 = distance_2 * Math.cos(angle_2);
+    const y2 = distance_2 * Math.sin(angle_2);
 
-    const x3 = distance_3 * Math.cos(angle);
-    const y3 = distance_3 * Math.sin(angle);
+    const x3 = distance_3 * Math.cos(angle_3);
+    const y3 = distance_3 * Math.sin(angle_3);
 
     // 안쪽 원의 위치 업데이트
     circle_2.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
@@ -207,8 +213,8 @@ function animate() {
     circle_4.style.transform = `translate(-50%, -50%) translate(${x3}px, ${y3}px)`;
     
     // circle_5는 circle_1의 바깥을 공전
-    const x5 = circle_5_OrbitRadius * Math.cos(angle);
-    const y5 = circle_5_OrbitRadius * Math.sin(angle);
+    const x5 = circle_5_OrbitRadius * Math.cos(angle_3);
+    const y5 = circle_5_OrbitRadius * Math.sin(angle_3);
     circle_5.style.transform = `translate(-50%, -50%) translate(${x5}px, ${-y5}px)`;
 
     requestAnimationFrame(animate);
