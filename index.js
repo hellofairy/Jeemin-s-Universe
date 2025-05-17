@@ -22,11 +22,11 @@ let is_circle_5_hovered = false;
 // 인포 버튼 클릭시 alert 출력
 infoBtn.addEventListener('click', () => {
   alert(
-    'Thank you for visiting Jeemin’s universe.\n\n' +
-    'I believe that every being in this vast cosmos holds a universe of their own. In that sense, this website is a glimpse into my world and that of my beloved cat, Peanut.\n\n' +
-    'I’ve visualized my universe to show how the diverse elements within me converge and intersect, giving rise to something new and creative. The choice of iridescent colors reflects the diversity within me that I wish to convey.\n\n' +
-    'I also believe that every existence in this cosmos is interconnected. Even if we are far apart, when we look up at the same moon and sun, we feel that connection.\n\n' +
-    'I look forward to the moment when my universe meets yours.'
+    "Thank you for visiting Jeemin’s universe.\n\n" +
+    "I believe that every being in this vast cosmos holds a universe of their own. In that sense, this website is a glimpse into my world and that of my beloved cat, Peanut.\n\n" +
+    "I’ve visualized my universe to show how the diverse elements within me converge and intersect, giving rise to something new and creative. The choice of iridescent colors reflects the diversity within me that I wish to convey.\n\n" +
+    "I also believe that every existence in this cosmos is interconnected. Even when we're worlds apart, we look up at the same sun and moon — reminders that we're still connected beneath the same sky. That's why I placed the contact section at the top, where the light lives — to reflect that bond between you and me.\n\n" +
+    "I look forward to the moment when my universe meets yours."
   );
 });
 
