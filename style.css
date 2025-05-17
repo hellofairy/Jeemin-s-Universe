@@ -13,6 +13,11 @@ span {
   font-size: 3rem;  /* or 14px, 0.875rem 등 원하는 값 */
 }
 
+a {
+  margin-left: 5px;
+  margin-right: 5px; /* 원하는 간격으로 조절 */
+}
+
 
 * {
   margin: 0;
@@ -841,3 +846,15 @@ footer {
 }
 
 /* peanut.html */
+
+/* craft.html */
+.catcafe-image{
+  border-radius: 40px;
+  height: 150px;
+}
+
+.catcafe-image:hover {
+  border-radius: 40px;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
