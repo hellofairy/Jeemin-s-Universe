@@ -27,7 +27,7 @@ infoBtn.addEventListener('click', () => {
     'I believe that every being in this vast cosmos holds a universe of their own. In that sense, this website is a glimpse into my world and that of my beloved cat, Peanut.\n\n' +
     'I’ve visualized my universe to show how the diverse elements within me converge and intersect, giving rise to something new and creative. The choice of iridescent colors reflects the diversity within me that I wish to convey.\n\n' +
     'I also believe that every existence in this cosmos is interconnected. Even if we are far apart, when we look up at the same moon and sun, we feel that connection.\n\n' +
-    'I look forward to the moment when Jeemin’s universe meets yours.'
+    'I look forward to the moment when my universe meets yours.'
   );
 });
 
