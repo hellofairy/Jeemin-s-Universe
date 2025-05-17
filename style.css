@@ -776,6 +776,7 @@ footer {
   /* Main Content Style */
   .main-content {
     padding-top: 0px;
+    max-width: 800px;
   }
   
   .index_circle {
@@ -789,3 +790,5 @@ footer {
     font-size: 11px;
   }
 }
+
+/* peanut.html */
