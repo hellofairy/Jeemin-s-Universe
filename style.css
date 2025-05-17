@@ -55,7 +55,6 @@ a {
 
 header {
   margin-bottom: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-  padding: 30px 0; /* 여백 추가 */
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -587,13 +586,16 @@ footer {
 
 /* jeemin.html */
 .index_circle {
-  border-radius: 50%;
+  position: relative;  /* 부모인 header를 기준으로 위치 */
   display: flex;
   justify-content: center;
-  align-items: center; 
-  position: absolute;  /* 부모 원을 기준으로 위치 설정 */
+  align-items: center;
   color: #ffadad;
-
+  font-size: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  
   /* 글로우 효과 */
   -webkit-animation: index_glowing 1s ease-in-out infinite alternate;
   -moz-animation: index_glowing 1s ease-in-out infinite alternate;
@@ -613,11 +615,19 @@ footer {
   }
 }
 
+header {
+  position: relative; /* 부모를 기준으로 위치를 지정할 수 있게 함 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
 .index_circle:hover {
   background-color: rgba(255,173,173,0.6);
   transition: background-color 0.3s ease;
   z-index: 8;
-
   color: white;
 }
 
@@ -664,6 +674,11 @@ footer {
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
+  header{
+    width: 100%;
+    height: 100px;
+  }
+  
   .index_circle {
     top: 20px;
     font-size: 20px;
