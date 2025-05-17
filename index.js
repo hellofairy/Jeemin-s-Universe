@@ -22,7 +22,6 @@ let is_circle_5_hovered = false;
 // 인포 버튼 클릭시 alert 출력
 infoBtn.addEventListener('click', () => {
   alert(
-    'Welcome to Jeemin’s Universe\n' +
     'Thank you for visiting Jeemin’s universe.\n\n' +
     'I believe that every being in this vast cosmos holds a universe of their own. In that sense, this website is a glimpse into my world and that of my beloved cat, Peanut.\n\n' +
     'I’ve visualized my universe to show how the diverse elements within me converge and intersect, giving rise to something new and creative. The choice of iridescent colors reflects the diversity within me that I wish to convey.\n\n' +
