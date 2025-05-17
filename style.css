@@ -848,6 +848,10 @@ footer {
 /* peanut.html */
 
 /* craft.html */
+.craft-image-section{
+  max-width: 600px;
+}
+
 .catcafe-image{
   border-radius: 40px;
   height: 10rem;
