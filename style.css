@@ -892,6 +892,6 @@ footer {
 @media (min-width: 1200px) {
   /* Main Content Style */
   .craft-page .main-content {
-  padding-top: 200px; /* 헤더 높이만큼 여백 확보 */
+  padding-top: 290px; /* 헤더 높이만큼 여백 확보 */
   }
 }
