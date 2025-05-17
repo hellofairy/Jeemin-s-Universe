@@ -11,11 +11,12 @@
   font-family: 'Lato', sans-serif;
   font-weight: 200;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 main {
   flex-grow: 1;
-  padding-top: 60px; /* header 높이만큼 */
+  padding-top: 70px; /* header 높이만큼 */
   position: relative; /* circle_0의 부모 */
   display: flex;
   align-items: center;
@@ -23,6 +24,7 @@ main {
 }
 
 body {
+  padding-top: 140px; /* 글자 사라지는 위치 */
   height: 100dvh;
   width: 100%;
   margin: 0;
@@ -63,6 +65,7 @@ a {
 }
 
 header {
+  height: 80px;
   margin-bottom: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
   z-index: 3;
   display: flex;
@@ -108,7 +111,7 @@ header {
   position: absolute;
   width: 600px;
   height: 600px;
-  padding-top: 60px;
+  padding-bottom: 70px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -631,15 +634,20 @@ footer {
 }
 
 /* header 고정 */
-/* 헤더 고정 */
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: 100px; /* 필요에 따라 조정 */
-  z-index: 10;
+  height: 120px; /* 필요에 따라 조정 */
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content {
+  flex-grow: 1;
+  padding-bottom: 0;  /* footer 높이 */
+  overflow-y: auto;
 }
 
 /* main은 flex-grow 역할 */
@@ -647,10 +655,10 @@ main {
   position: relative;
   flex: 1; /* 남는 공간 전부 차지 */
   z-index: 5;
-  padding-top: 150px; /* header 높이 만큼 여백 */
 }
 
 section{
+  padding-top: 130px;
   position: relative;
   z-index: 5;
   color: white;
