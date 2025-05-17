@@ -68,6 +68,40 @@ header {
   justify-content: center;
 }
 
+.info-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 5
+}
+
+.info-btn:hover {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(142, 255, 178, 0.6);
+  transition: background-color 0.3s ease;
+  border: none;
+  color: white;
+  font-size: 35px;
+  rotate: 15deg;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: index 5;
+}
+
 .contact_circle {
   border-radius: 50%;
   display: flex;
@@ -99,7 +133,6 @@ header {
   background-color: rgba(189,190,255,0.6);
   transition: background-color 0.3s ease;
   z-index: 8;
-
   color: white;
 }
 
