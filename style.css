@@ -692,7 +692,7 @@ footer {
 
   /* Main Content Style */
   .main-content {
-    padding-top: 520px;
+    padding-top: 540px;
   }
   
   .footer-text {
@@ -716,12 +716,13 @@ footer {
 
   /* Sticky Header */
   .sticky-header {
+    padding-top: 30px;
     padding-bottom: 100px;
   }
 
   /* Main Content Style */
   .main-content {
-    padding-top: 510px;
+    padding-top: 330px;
   }
 
   .footer-text {
@@ -737,6 +738,18 @@ footer {
     font-size: 20px;
     height: 70px;
     width: 70px;
+  }
+
+   /* Sticky Header */
+  .sticky-header {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    z-index: 1000;
+  }
+
+  /* Main Content Style */
+  .main-content {
+    padding-top: 450px;
   }
   
   .footer-text {
