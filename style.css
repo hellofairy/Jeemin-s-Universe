@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 200;
   font-style: normal;
 }
@@ -657,6 +657,10 @@ header {
   margin: 0;
 }
 
+.bullet-points{
+  padding-left: 13px;
+}
+
 /* footer는 높이 고정 */
 footer {
   height: 50px;
@@ -722,7 +726,7 @@ footer {
 
   /* Main Content Style */
   .main-content {
-    padding-top: 330px;
+    padding-top: 370px;
   }
 
   .footer-text {
@@ -749,7 +753,7 @@ footer {
 
   /* Main Content Style */
   .main-content {
-    padding-top: 450px;
+    padding-top: 600px;
   }
   
   .footer-text {
@@ -771,7 +775,7 @@ footer {
 
   /* Main Content Style */
   .main-content {
-    padding-top: 450px;
+    padding-top: 0px;
   }
   
   .index_circle {
