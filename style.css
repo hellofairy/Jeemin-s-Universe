@@ -850,6 +850,7 @@ footer {
 /* craft.html */
 .catcafe-image{
   border-radius: 40px;
+  width: 150px;
   height: 150px;
 }
 
