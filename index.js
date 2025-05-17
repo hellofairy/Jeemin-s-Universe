@@ -193,9 +193,9 @@ function animate() {
     const distance_3 = circle_1_Radius - circle_4_Radius;
 
     // 각 원마다 다른 속도로 회전
-    angle_1 += 0.006 + Math.random() * 0.002;
-    angle_2 += 0.005 + Math.random() * 0.002;
-    angle_3 += 0.004 + Math.random() * 0.002;
+    angle_1 += 0.004 + Math.random() * 0.00002;
+    angle_2 += 0.003 + Math.random() * 0.00002;
+    angle_3 += 0.002 + Math.random() * 0.00002;
 
     // 바깥 원의 반지름에 맞게 안쪽 원의 위치 계산
     const x = distance * Math.cos(angle_1);
