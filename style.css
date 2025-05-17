@@ -635,12 +635,6 @@ footer {
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-<<<<<<< HEAD
-  z-index: 100;
-=======
-  height: 100px; /* 필요에 따라 조정 */
-  z-index: 10;
->>>>>>> parent of 3b42790 (jeemin.html header 밑으로 내용 들어가게 수정)
   display: flex;
   align-items: center;
   justify-content: center;
