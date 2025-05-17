@@ -637,7 +637,6 @@ footer {
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: 120px; /* 필요에 따라 조정 */
   z-index: 100;
   display: flex;
   align-items: center;
@@ -658,7 +657,6 @@ main {
 }
 
 section{
-  padding-top: 130px;
   position: relative;
   z-index: 5;
   color: white;
@@ -684,6 +682,17 @@ footer {
     font-size: 25px;
     height: 90px;
     width: 90px;
+  }
+
+  header{
+    width: 100%;
+    height: 120px; /* 필요에 따라 조정 */
+  }
+
+   section{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 680px; /* header 높이만큼 */
   }
   
   .footer-text {
@@ -723,7 +732,11 @@ footer {
 @media (min-width: 1200px) {
   header{
     width: 100%;
-    height: 100px;
+    height: 120px; /* 필요에 따라 조정 */
+  }
+
+  section{
+    padding-top: 130px; /* header 높이만큼 */
   }
   
   .index_circle {
