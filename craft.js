@@ -6,7 +6,6 @@ index_circle.addEventListener('click', function(event) {
   event.stopPropagation(); // 부모의 클릭 이벤트를 막음
   window.location.href = 'index.html';
   console.log("실행");
-  
 });
 
 // 커비 마우스 커서
@@ -14,8 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const cursor = document.getElementById("cursor");
 
   document.addEventListener("mousemove", function (e) {
-    cursor.style.left = `${e.pageX}px`;
-    cursor.style.top = `${e.pageY}px`;
+    // viewport 기준으로 커서 위치 설정 (fixed positioning)
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
   });
 });
 

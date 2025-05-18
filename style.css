@@ -37,6 +37,7 @@ body {
   background-color: #000000;
   overflow-x: hidden;
   position: relative;
+  cursor: none; /* 기본 마우스 커서 숨기기 */
 }
 
 main {
@@ -51,10 +52,11 @@ main {
 /* 커비 마우스 커서 */
 .custom-cursor {
   position: fixed;
-  width: 32px; /* GIF 크기에 맞게 조절 */
+  width: 32px;
   height: 32px;
-  pointer-events: none; /* 클릭 방지 */
+  pointer-events: none;
   z-index: 9999;
+  transform: translate(-50%, -50%);
 }
 
 a, div{
