@@ -937,19 +937,76 @@ footer {
 /* craft.html 전용 반응형 스타일 */
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
+  .craft-page {
+    padding-top: 250px;  /* 헤더 높이만큼 상단 패딩 추가 */
+  }
+
   .craft-page .index_circle {
-    font-size: 1.8rem;
-    height: 80px;
-    width: 80px;
+    font-size: 2rem !important;
+    height: 100px !important;
+    width: 100px !important;
     margin-top: 30px;
   }
 
   .craft-page .index_circle span {
-    font-size: 1.8rem;
+    font-size: 2rem !important;
   }
 
   .craft-page .main-content {
-    padding-top: 270px;
+    padding-top: 100px !important;  /* 헤더와 콘텐츠 사이 간격 */
+    margin-top: 0;
+  }
+
+  .craft-page header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 250px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    z-index: 1000;
+  }
+
+  .craft-page .page-container {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .craft-page .craft-image-section {
+    margin-top: 50px;  /* 이미지 섹션 상단 여백 추가 */
+  }
+}
+
+/* 일반 모바일 스타일 */
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact_circle,
+  .index_circle {
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  .index_circle span {
+    font-size: 2rem;
+  }
+
+  .craft-page .index_circle {
+    font-size: 2rem !important;
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: 30px;
+  }
+
+  .craft-page .index_circle span {
+    font-size: 2rem !important;
+  }
+
+  .craft-page .main-content {
+    padding-top: 320px;
   }
 
   .craft-page header {
@@ -962,6 +1019,61 @@ footer {
 
   .craft-page .page-container {
     padding-top: 0;
+  }
+
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span {
+    font-size: 2rem;
+    top: -20px;
+  }
+
+  .circle_5 span {
+    font-size: 2rem;
+    top: -15px;
+  }
+  
+  .circle_0,
+  .circle_1 {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .circle_2 {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .circle_3 {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .circle_4 {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .circle_5 {
+    height: 40px;
+    width: 40px;
+  }
+
+  header {
+    height: 250px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .page-container {
+    padding-top: 270px;
+  }
+  
+  .footer-text {
+    font-size: 2rem !important;
   }
 }
 
