@@ -423,7 +423,7 @@ footer {
   }
 
   main {
-    height: calc(100vh - 110px); /* 헤더 높이에 맞춰 조정 */
+    height: calc(100vh - 110px - 80px); /* 헤더(110px) + 푸터(80px) 높이를 제외한 높이 */
     margin: 0;
     padding: 0;
   }
@@ -433,18 +433,26 @@ footer {
   }
 
   header {
-    height: 110px !important; /* Increase height to accommodate the circle */
+    height: 110px !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   footer {
-    height: 50px;
+    height: 80px !important; /* 푸터 높이 증가 */
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text {
+    font-size: 1.5rem !important; /* 푸터 텍스트 크기 증가 */
+    line-height: 80px; /* 높이에 맞춰 조정 */
   }
 
   .contact_circle,
@@ -490,10 +498,6 @@ footer {
     width: 50px;
   }
   
-  .footer-text {
-    font-size: 1.2rem;
-  }
-
   .peanut-title {
     font-size: 2.0rem !important;
   }
@@ -556,11 +560,6 @@ footer {
     width: 60px;
   }
   
-  .footer-text {
-    margin-bottom: 50px;
-    font-size: 1rem;
-  }
-
   .peanut-title {
     font-size: 2.0rem !important;
   }
@@ -627,10 +626,6 @@ footer {
     width: 30px;
   }
   
-  .footer-text {
-    font-size: 1rem;
-  }
-
   .peanut-title {
     font-size: 2.0rem !important;
   }
@@ -705,10 +700,6 @@ footer {
     width: 40px;
   }
   
-  .footer-text {
-    font-size: 1rem;
-  }
-
   .peanut-title {
     font-size: 2.0rem !important;
   }
