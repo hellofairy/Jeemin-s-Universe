@@ -417,6 +417,33 @@ footer {
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  main {
+    height: calc(100vh - 130px); /* 헤더(70px) + 푸터(50px) 높이를 제외한 높이 */
+    margin: 0;
+    padding: 0;
+  }
+
+  .circle_0 {
+    padding-top: 0;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .contact_circle,
   .index_circle {
     font-size: 40px;
@@ -430,10 +457,11 @@ footer {
   .circle_4 span,
   .circle_5 span {
     font-size: 2rem;
-    top: -15px; /* 원의 위쪽으로 이동 */
+    top: -15px;
   }
 
-  .circle_0, .circle_1 {
+  .circle_0,
+  .circle_1 {
     height: 500px;
     width: 500px;
   }
@@ -444,17 +472,17 @@ footer {
   }
   
   .circle_3 {
-    height: 300px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 300px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 300px;
+    width: 300px;
   }
   
   .circle_4 {
-    height: 200px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 200px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 200px;
+    width: 200px;
   }
   
   .circle_5 {
-    height: 50px;  /* 크기 조정 */
+    height: 50px;
     width: 50px;
   }
   
