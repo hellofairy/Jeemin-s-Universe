@@ -419,14 +419,14 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   .contact_circle,
   .index_circle {
-    font-size: 1.2rem;
-    height: 70px;
-    width: 70px;
+    font-size: 1.5rem;
+    height: 90px;
+    width: 90px;
     margin-top: 30px;
   }
 
   .index_circle span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .circle_1 span,
