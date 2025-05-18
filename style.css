@@ -419,14 +419,41 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   .contact_circle,
   .index_circle {
-    font-size: 1.8rem;
-    height: 80px;
-    width: 80px;
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
     margin-top: 30px;
   }
 
   .index_circle span {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .craft-page .index_circle {
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  .craft-page .index_circle span {
+    font-size: 2rem;
+  }
+
+  .craft-page .main-content {
+    padding-top: 320px;
+  }
+
+  .craft-page header {
+    height: 250px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .craft-page .page-container {
+    padding-top: 0;
   }
 
   .circle_1 span,
