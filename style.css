@@ -417,7 +417,8 @@ footer {
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
-  .contact_circle {
+  .contact_circle,
+  .index_circle {
     font-size: 40px;
     height: 90px;
     width: 90px;
@@ -468,8 +469,8 @@ footer {
 
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
-  .contact_circle {
-    top: 50px;
+  .contact_circle,
+  .index_circle {
     font-size: 20px;
     height: 150px;
     width: 150px;
@@ -526,8 +527,8 @@ footer {
 
 /* 태블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .contact_circle {
-    top: 20px;
+  .contact_circle,
+  .index_circle {
     font-size: 1rem;
     height: 70px;
     width: 70px;
@@ -583,10 +584,11 @@ footer {
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
-  .contact_circle {
+  .contact_circle,
+  .index_circle {
     font-size: 1rem;
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
   }
 
   span{
@@ -683,9 +685,6 @@ footer {
   justify-content: center;
   align-items: center;
   color: #ffadad;
-  font-size: 1rem;
-  height: 70px;
-  width: 70px;
   border-radius: 50%;
   
   /* 글로우 효과 */
