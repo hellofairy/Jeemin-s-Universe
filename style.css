@@ -1171,6 +1171,7 @@ body .main-content section h1 strong {
 @media (max-width: 767px) {
   body.craft-page {
     padding-top: 0 !important;
+    margin-top: 0 !important;
   }
   
   body.craft-page header {
@@ -1178,7 +1179,7 @@ body .main-content section h1 strong {
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    height: 180px !important;
+    height: 150px !important;
     z-index: 9999 !important;
     background-color: rgba(0, 0, 0, 0.95) !important;
   }
@@ -1195,17 +1196,29 @@ body .main-content section h1 strong {
     font-size: 1.8rem !important;
   }
 
+  /* 강력한 본문 스타일링 */
+  body.craft-page main.main-content,
   body.craft-page .main-content {
-    padding-top: 220px !important;
-    margin-top: 30px !important;
+    padding-top: 350px !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
   
-  body.craft-page .main-content section:first-child {
-    margin-top: 30px !important;
+  body.craft-page .craft-image-section {
+    margin-top: 50px !important;
+    padding-top: 50px !important;
   }
   
   body.craft-page .page-container {
     margin-top: 0 !important;
     padding-top: 0 !important;
+  }
+  
+  /* 모든 헤더와 콘텐츠 사이 간격 확보 */
+  body.craft-page main.main-content > section:first-child,
+  body.craft-page .main-content > section:first-child {
+    margin-top: 100px !important;
+    padding-top: 50px !important;
   }
 }
