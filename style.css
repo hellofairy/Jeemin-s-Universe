@@ -914,15 +914,18 @@ footer {
 
 .page-container {
   width: 100%;
-  min-height: 100vh;
-  padding-top: 100px; /* 헤더 높이 + 약간의 여유 공간 */
+  min-height: calc(100vh - 50px); /* 헤더 높이를 제외한 높이 */
+  padding-top: 100px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .craft-page {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
 }
 
 .craft-page .craft-image-section {
@@ -930,9 +933,11 @@ footer {
 }
 
 .craft-page .main-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px; /* footer 높이만큼 패딩 추가 */
 }
 
 /* Background Effects */
