@@ -662,20 +662,31 @@ footer {
 
 /* jeemin.html */
 .index_circle {
-  position: relative;  /* 부모인 header를 기준으로 위치 */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffadad;
   font-size: 1rem;
-  height: 60px; /* 크기 줄임 */
-  width: 60px; /* 크기 줄임 */
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   
   /* 글로우 효과 */
   -webkit-animation: index_glowing 1s ease-in-out infinite alternate;
   -moz-animation: index_glowing 1s ease-in-out infinite alternate;
   animation: index_glowing 1s ease-in-out infinite alternate;
+}
+
+.index_circle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 @-webkit-keyframes index_glowing {
@@ -687,15 +698,22 @@ footer {
   to {
     -webkit-box-shadow:0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
     -moz-box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
-     box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
+    box-shadow: 0px 0px 57px 3px rgba(255,173,173,var(--circle_effect_opacity_full));
   }
+}
+
+.index_circle:hover {
+  background-color: rgba(255,173,173,0.6);
+  transition: background-color 0.3s ease;
+  z-index: 8;
+  color: white;
 }
 
 /* Sticky Header */
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 1); /* optional: semi-transparent */
+  background-color: rgba(0, 0, 0, 1);
   z-index: 1000;
   text-align: center;
 }
@@ -710,28 +728,27 @@ footer {
   z-index: 1;
 }
 
-
-.bullet-points{
+.bullet-points {
   padding-left: 13px;
-}
-
-.index_circle:hover {
-  background-color: rgba(255,173,173,0.6);
-  transition: background-color 0.3s ease;
-  z-index: 8;
-  color: white;
 }
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .index_circle {
-    font-size: 1rem;
-    height: 50px;
-    width: 50px;
+    font-size: 1.2rem;
+    height: 70px;
+    width: 70px;
+  }
+
+  .index_circle span {
+    font-size: 1.2rem;
   }
 
   header {
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-container {
