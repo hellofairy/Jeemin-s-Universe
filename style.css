@@ -922,7 +922,7 @@ footer {
   }
 
   .craft-page .main-content {
-    padding-top: 180px;
+    padding-top: 270px;
   }
 
   .craft-page header {
@@ -931,6 +931,10 @@ footer {
     justify-content: center;
     align-items: flex-start;
     padding-top: 20px;
+  }
+
+  .craft-page .page-container {
+    padding-top: 0;
   }
 }
 
