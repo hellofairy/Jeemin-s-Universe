@@ -468,7 +468,7 @@ footer {
   }
 
   header {
-    height: 200px !important;
+    height: 250px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,7 +532,7 @@ footer {
   }
 
   header {
-    height: 200px !important;
+    height: 250px !important;
   }
 
   .page-container {
