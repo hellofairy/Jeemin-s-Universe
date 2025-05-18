@@ -7,6 +7,7 @@
 
 html{
   font-size: 16px;
+  height: 100%;
 }
 
 span {
@@ -26,31 +27,25 @@ a {
   font-size: 1rem;
 }
 
-main {
-  flex-grow: 1;
-  position: relative; /* circle_0의 부모 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
-  height: 100dvh;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  flex-direction: column; /* 부모가 세로 방향으로 자식 요소를 배치 */
-  overflow-y: auto;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;  
-  box-sizing: border-box; 
-  
-  /* 마우스 커서 */
-  cursor: none; /* 기본 커서 숨기기 */
+  position: relative;
+  z-index: 1;
 }
 
 /* 커비 마우스 커서 */
@@ -74,10 +69,18 @@ a {
   left: 50%;
 }
 
+/* 헤더 고정 */
 header {
-  margin-bottom: auto; /* 위의 요소들이 밀려나며 footer가 아래에 배치됨 */
-  z-index: 3;
+  width: 100%;
+  height: 80px; /* 헤더 높이 줄임 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.95);
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -94,7 +97,7 @@ header {
   font-size: 4rem;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 5
+  z-index: 1001;
 }
 
 .info-btn:hover {
@@ -112,7 +115,7 @@ header {
   rotate: 15deg;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: index 5;
+  z-index: 1001;
 }
 
 .contact_circle {
@@ -391,19 +394,21 @@ header {
 
 /* footer는 높이 고정 */
 footer {
+  width: 100%;
   height: 50px;
   text-align: center;
   line-height: 50px;
-  z-index: 3;
-  margin: auto;
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
 }
   
 .footer-text {
   height: auto;
   font-size: 2rem;
-  margin-bottom: 0;
-  clear: both;
+  margin: 0;
   color: white;
+  display: flex;
   justify-content: center;
   align-items: center; 
 }
@@ -630,14 +635,15 @@ footer {
 }
 
 .stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+  position: fixed; /* absolute에서 fixed로 변경 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
 }
 
 .stars {
@@ -660,8 +666,8 @@ footer {
   align-items: center;
   color: #ffadad;
   font-size: 1rem;
-  height: 70px;
-  width: 70px;
+  height: 60px; /* 크기 줄임 */
+  width: 60px; /* 크기 줄임 */
   border-radius: 50%;
   
   /* 글로우 효과 */
@@ -683,15 +689,6 @@ footer {
   }
 }
 
-/* 헤더 고정 */
-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Sticky Header */
 .sticky-header {
   position: sticky;
@@ -703,23 +700,17 @@ header {
 
 /* Main Content Style */
 .main-content {
-  display: flex;
-  flex-direction: column; /* 세로로 배치 */
   width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
   color: white;
-  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 
 .bullet-points{
   padding-left: 13px;
-}
-
-/* footer는 높이 고정 */
-footer {
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
 }
 
 .index_circle:hover {
@@ -733,24 +724,16 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   .index_circle {
     font-size: 1rem;
-    height: 90px;
-    width: 90px;
+    height: 50px;
+    width: 50px;
   }
 
-  header{
-    width: 100%;
-    height: 120px; /* 필요에 따라 조정 */
+  header {
+    height: 70px;
   }
 
-  /* Sticky Header */
-  .sticky-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  /* Main Content Style */
-  .main-content {
-    padding-top: 0px;
+  .page-container {
+    padding-top: 90px;
   }
   
   .footer-text {
@@ -761,26 +744,17 @@ footer {
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
   .index_circle {
-    top: 50px;
     font-size: 1rem;
-    height: 140px;
-    width: 140px;
+    height: 60px;
+    width: 60px;
   }
 
-  header{
-    width: 100%;
-    height: 120px; /* 필요에 따라 조정 */
+  header {
+    height: 80px;
   }
 
-  /* Sticky Header */
-  .sticky-header {
-    padding-top: 30px;
-    padding-bottom: 100px;
-  }
-
-  /* Main Content Style */
-  .main-content {
-    padding-top: 0px;
+  .page-container {
+    padding-top: 100px;
   }
 
   .footer-text {
@@ -792,22 +766,17 @@ footer {
 /* 태블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
   .index_circle {
-    top: 20px;
     font-size: 1rem;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 
-   /* Sticky Header */
-  .sticky-header {
-    padding-top: 30px;
-    padding-bottom: 100px;
-    z-index: 1000;
+  header {
+    height: 80px;
   }
 
-  /* Main Content Style */
-  .main-content {
-    padding-top: 0px;
+  .page-container {
+    padding-top: 100px;
   }
   
   .footer-text {
@@ -817,27 +786,18 @@ footer {
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
-  header{
-    width: 100%;
-    height: 120px; /* 필요에 따라 조정 */
+  header {
+    height: 80px;
   }
 
-  /* Sticky Header */
-  .sticky-header {
-    padding-bottom: 40px;
+  .page-container {
+    padding-top: 100px;
   }
 
-  /* Main Content Style */
-  .main-content {
-    padding-top: 0px;
-    max-width: 800px;
-  }
-  
   .index_circle {
-    top: 20px;
     font-size: 1rem;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
   }
 
   .footer-text {
@@ -868,7 +828,7 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   /* Main Content Style */
   .craft-page .main-content {
-  padding-top: 0px; /* 헤더 높이만큼 여백 확보 */
+    padding-top: 0; /* 기존 패딩 제거 */
   }
 }
 
@@ -876,7 +836,7 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Main Content Style */
   .craft-page .main-content {
-  padding-top: 0px; /* 헤더 높이만큼 여백 확보 */
+    padding-top: 0; /* 기존 패딩 제거 */
   }
 }
 
@@ -884,7 +844,7 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Main Content Style */
   .craft-page .main-content {
-  padding-top: 0px; /* 헤더 높이만큼 여백 확보 */
+    padding-top: 0; /* 기존 패딩 제거 */
   }
 }
 
@@ -892,6 +852,154 @@ footer {
 @media (min-width: 1200px) {
   /* Main Content Style */
   .craft-page .main-content {
-  padding-top: 540px; /* 헤더 높이만큼 여백 확보 */
+    padding-top: 0; /* 기존 패딩 제거 */
+  }
+}
+
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px; /* 헤더 높이 + 약간의 여유 공간 */
+  box-sizing: border-box;
+}
+
+.craft-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.craft-page .craft-image-section {
+  margin-bottom: 2rem;
+}
+
+.craft-page .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Background Effects */
+.stars, .twinkling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.stars {
+  background: #000 url(images/stars.png) repeat top center;
+  z-index: -1;
+}
+
+.twinkling {
+  background: transparent url(images/twinkling.png) repeat top center;
+  z-index: 0;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* 기본 텍스트 스타일 */
+.craft-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.craft-page p, 
+.craft-page .bullet-points {
+  font-size: 1rem;
+}
+
+/* 모바일 */
+@media (min-width: 0px) and (max-width: 767px) {
+  .craft-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .craft-page p, 
+  .craft-page .bullet-points,
+  .craft-page i {
+    font-size: 1.2rem;
+  }
+
+  .craft-page strong {
+    font-size: 1.3rem;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .page-container {
+    padding-top: 90px;
+  }
+
+  .index_circle {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* 태블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .craft-page h1 {
+    font-size: 2.1rem;
+  }
+
+  .craft-page p, 
+  .craft-page .bullet-points,
+  .craft-page i {
+    font-size: 1.15rem;
+  }
+
+  .craft-page strong {
+    font-size: 1.25rem;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .page-container {
+    padding-top: 100px;
+  }
+
+  .index_circle {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* 태블릿 가로 */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .craft-page h1 {
+    font-size: 2rem;
+  }
+
+  .craft-page p, 
+  .craft-page .bullet-points,
+  .craft-page i {
+    font-size: 1.1rem;
+  }
+
+  .craft-page strong {
+    font-size: 1.2rem;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .page-container {
+    padding-top: 100px;
+  }
+
+  .index_circle {
+    height: 60px;
+    width: 60px;
   }
 }
