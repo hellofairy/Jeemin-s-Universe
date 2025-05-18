@@ -726,6 +726,27 @@ footer {
   color: white;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.jeemin-image-section {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-content {
+  width: 100%;
+}
+
+.text-content h1 {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: underline;
 }
 
 .bullet-points {
