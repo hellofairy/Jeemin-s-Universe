@@ -422,6 +422,7 @@ footer {
     font-size: 1.2rem;
     height: 70px;
     width: 70px;
+    margin-top: 30px;
   }
 
   .index_circle span {
@@ -471,11 +472,12 @@ footer {
     height: 250px !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 20px;
   }
 
   .page-container {
-    padding-top: 220px;
+    padding-top: 270px;
   }
   
   .footer-text {
@@ -536,7 +538,7 @@ footer {
   }
 
   .page-container {
-    padding-top: 220px;
+    padding-top: 270px;
   }
 
   .footer-text {
@@ -594,11 +596,11 @@ footer {
   }
 
   header {
-    height: 200px !important;
+    height: 250px !important;
   }
 
   .page-container {
-    padding-top: 220px;
+    padding-top: 270px;
   }
 
   .footer-text {
