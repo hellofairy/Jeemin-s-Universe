@@ -460,6 +460,10 @@ footer {
   .footer-text {
     font-size: 3rem;
   }
+
+  .peanut-title {
+    font-size: 2.0rem !important;
+  }
 }
 
 /* 태블릿 세로 */
@@ -514,6 +518,10 @@ footer {
     margin-bottom: 50px;
     font-size: 1rem;
   }
+
+  .peanut-title {
+    font-size: 2.0rem !important;
+  }
 }
 
 /* 태블릿 가로 */
@@ -566,6 +574,10 @@ footer {
   
   .footer-text {
     font-size: 1rem;
+  }
+
+  .peanut-title {
+    font-size: 2.0rem !important;
   }
 }
 
@@ -627,6 +639,10 @@ footer {
   
   .footer-text {
     font-size: 1rem;
+  }
+
+  .peanut-title {
+    font-size: 2.0rem !important;
   }
 }
 
@@ -744,7 +760,7 @@ footer {
 }
 
 .text-content h1 {
-  font-size: 1.5em;
+  font-size: 1.5rem !important;
   color: white;
   text-decoration: underline;
 }
@@ -1042,4 +1058,11 @@ footer {
     height: 60px;
     width: 60px;
   }
+}
+
+/* Override all other h1 styles */
+body .main-content section h1,
+body .main-content section h1 strong {
+  font-size: 1.5rem !important;
+  font-weight: bold;
 }
