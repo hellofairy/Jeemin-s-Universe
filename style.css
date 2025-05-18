@@ -930,7 +930,7 @@ footer {
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
   .craft-page .main-content {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 }
 
@@ -1021,7 +1021,7 @@ footer {
   }
 
   .page-container {
-    padding-top: 140px;
+    padding-top: 100px;
   }
 
   .index_circle {
