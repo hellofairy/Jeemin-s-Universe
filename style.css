@@ -417,98 +417,31 @@ footer {
 
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
-  html, body {
-    height: 100%;
-    overflow: hidden;
-  }
-
-  main {
-    height: calc(100vh - 110px - 80px); /* 헤더(110px) + 푸터(80px) 높이를 제외한 높이 */
-    margin: 0;
-    padding: 0;
-  }
-
-  .circle_0 {
-    padding-top: 0;
-  }
-
-  header {
-    height: 110px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer {
-    height: 80px !important; /* 푸터 높이 증가 */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-text {
-    font-size: 1.5rem !important; /* 푸터 텍스트 크기 증가 */
-    line-height: 80px; /* 높이에 맞춰 조정 */
-  }
-
   .contact_circle,
   .index_circle {
     font-size: 1.2rem;
     height: 70px;
     width: 70px;
-    margin-top: 20px; /* Add margin to prevent clipping */
+    margin-top: 65px; /* Increase margin-top to center in taller header */
   }
 
-  .circle_1 span,
-  .circle_2 span,
-  .circle_3 span,
-  .circle_4 span,
-  .circle_5 span {
-    font-size: 2rem;
-    top: -15px;
+  .index_circle span {
+    font-size: 1.2rem;
   }
 
-  .circle_0,
-  .circle_1 {
-    height: 500px;
-    width: 500px;
-  }
-  
-  .circle_2 {
-    height: 400px;
-    width: 400px;
-  }
-  
-  .circle_3 {
-    height: 300px;
-    width: 300px;
-  }
-  
-  .circle_4 {
-    height: 200px;
-    width: 200px;
-  }
-  
-  .circle_5 {
-    height: 50px;
-    width: 50px;
-  }
-  
-  .peanut-title {
-    font-size: 2.0rem !important;
-  }
-
-  .index_circle {
-    height: 50px;
-    width: 50px;
+  header {
+    height: 200px !important; /* Increase header height for mobile */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .page-container {
-    padding-top: 110px; /* 헤더 높이에 맞춰 컨텐츠 시작 위치 조정 */
+    padding-top: 200px; /* Match new header height */
+  }
+  
+  .footer-text {
+    font-size: 2rem !important;
   }
 }
 
@@ -560,6 +493,11 @@ footer {
     width: 60px;
   }
   
+  .footer-text {
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+
   .peanut-title {
     font-size: 2.0rem !important;
   }
@@ -626,6 +564,10 @@ footer {
     width: 30px;
   }
   
+  .footer-text {
+    font-size: 1rem;
+  }
+
   .peanut-title {
     font-size: 2.0rem !important;
   }
@@ -700,6 +642,10 @@ footer {
     width: 40px;
   }
   
+  .footer-text {
+    font-size: 1rem;
+  }
+
   .peanut-title {
     font-size: 2.0rem !important;
   }
