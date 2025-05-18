@@ -1222,3 +1222,35 @@ body .main-content section h1 strong {
     padding-top: 50px !important;
   }
 }
+
+/* craft.html 전용 강력한 스타일 - 최상위에 배치 */
+html body.craft-page .page-container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+html body.craft-page .main-content {
+  padding-top: 170px !important;
+  margin-top: 0 !important;
+}
+
+html body.craft-page header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 150px !important;
+  z-index: 9999 !important;
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+html body.craft-page .index_circle {
+  height: 80px !important;
+  width: 80px !important;
+  font-size: 1.8rem !important;
+  margin-top: 30px !important;
+}
+
+html body.craft-page .index_circle span {
+  font-size: 1.8rem !important;
+}
