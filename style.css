@@ -430,16 +430,21 @@ footer {
   }
 
   .craft-page header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 150px !important;
+    z-index: 1000;
+    background: rgba(0,0,0,0.95);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 20px;
-    background-color: rgba(0, 0, 0, 0.95);
   }
 
   .craft-page .main-content {
-    padding-top: 150px;
+    padding-top: 170px !important;
   }
 
   .craft-page .craft-image-section {
@@ -939,16 +944,21 @@ footer {
   }
 
   .craft-page header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 150px !important;
+    z-index: 1000;
+    background: rgba(0,0,0,0.95);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-top: 20px;
-    background-color: rgba(0, 0, 0, 0.95);
   }
 
   .craft-page .main-content {
-    padding-top: 150px;
+    padding-top: 170px !important;
   }
 
   .craft-page .page-container {
