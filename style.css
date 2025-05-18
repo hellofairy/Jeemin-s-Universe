@@ -430,14 +430,14 @@ footer {
   }
 
   .craft-page .index_circle {
-    font-size: 2rem;
-    height: 100px;
-    width: 100px;
+    font-size: 2rem !important;
+    height: 100px !important;
+    width: 100px !important;
     margin-top: 30px;
   }
 
   .craft-page .index_circle span {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .craft-page .main-content {
