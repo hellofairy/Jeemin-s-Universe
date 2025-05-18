@@ -422,7 +422,6 @@ footer {
     font-size: 1.2rem;
     height: 70px;
     width: 70px;
-    margin-top: 65px; /* Increase margin-top to center in taller header */
   }
 
   .index_circle span {
@@ -430,18 +429,22 @@ footer {
   }
 
   header {
-    height: 200px !important; /* Increase header height for mobile */
+    height: 140px !important; /* Adjusted header height */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .page-container {
-    padding-top: 200px; /* Match new header height */
+    padding-top: 160px; /* Increased padding to prevent content overlap */
   }
   
   .footer-text {
     font-size: 2rem !important;
+  }
+
+  .craft-page .main-content {
+    padding-top: 20px; /* Added small padding for craft page content */
   }
 }
 
@@ -898,33 +901,29 @@ footer {
 /* craft.html 전용 반응형 스타일 */
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
-  /* Main Content Style */
   .craft-page .main-content {
-    padding-top: 0; /* 기존 패딩 제거 */
+    padding-top: 100px; /* Adjusted padding for mobile */
   }
 }
 
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Main Content Style */
   .craft-page .main-content {
-    padding-top: 0; /* 기존 패딩 제거 */
+    padding-top: 80px;
   }
 }
 
 /* 태블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Main Content Style */
   .craft-page .main-content {
-    padding-top: 0; /* 기존 패딩 제거 */
+    padding-top: 80px;
   }
 }
 
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
-  /* Main Content Style */
   .craft-page .main-content {
-    padding-top: 0; /* 기존 패딩 제거 */
+    padding-top: 80px;
   }
 }
 
@@ -953,6 +952,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
   padding-bottom: 50px; /* footer 높이만큼 패딩 추가 */
 }
 
