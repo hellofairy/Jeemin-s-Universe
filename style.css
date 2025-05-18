@@ -468,22 +468,18 @@ footer {
   }
 
   header {
-    height: 180px !important;
+    height: 200px !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .page-container {
-    padding-top: 200px;
+    padding-top: 220px;
   }
   
   .footer-text {
     font-size: 2rem !important;
-  }
-
-  .craft-page .main-content {
-    padding-top: 20px;
   }
 }
 
@@ -501,12 +497,12 @@ footer {
   .circle_3 span,
   .circle_4 span {
     font-size: 3rem;
-    top: -30px; /* 원의 위쪽으로 이동 */
+    top: -30px;
   }
 
   .circle_5 span {
     font-size: 3rem;
-    top: -20px; /* 원의 위쪽으로 이동 */
+    top: -20px;
   }
   
   .circle_0,
@@ -521,40 +517,31 @@ footer {
   }
   
   .circle_3 {
-    height: 400px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 400px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 400px;
+    width: 400px;
   }
   
   .circle_4 {
-    height: 300px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 300px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 300px;
+    width: 300px;
   }
   
   .circle_5 {
-    height: 60px;  /* 크기 조정 */
-    width: 60px;
-  }
-  
-  .footer-text {
-    margin-bottom: 50px;
-    font-size: 1rem;
-  }
-
-  .peanut-title {
-    font-size: 2.0rem !important;
-  }
-
-  .index_circle {
     height: 60px;
     width: 60px;
   }
 
   header {
-    height: 140px !important;
+    height: 200px !important;
   }
 
   .page-container {
-    padding-top: 160px;
+    padding-top: 220px;
+  }
+
+  .footer-text {
+    margin-bottom: 50px;
+    font-size: 1rem;
   }
 }
 
@@ -567,7 +554,7 @@ footer {
     width: 70px;
   }
 
-  span{
+  span {
     font-size: 1.5rem;
   }
 
@@ -577,7 +564,7 @@ footer {
   .circle_4 span,
   .circle_5 span {
     font-size: 1rem;
-    top: -15px; /* 원의 위쪽으로 이동 */
+    top: -15px;
   }
   
   .circle_0,
@@ -592,39 +579,30 @@ footer {
   }
   
   .circle_3 {
-    height: 200px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 200px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 200px;
+    width: 200px;
   }
   
   .circle_4 {
-    height: 100px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 100px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 100px;
+    width: 100px;
   }
   
   .circle_5 {
-    height: 30px;  /* 크기 조정 */
+    height: 30px;
     width: 30px;
-  }
-  
-  .footer-text {
-    font-size: 1rem;
-  }
-
-  .peanut-title {
-    font-size: 2.0rem !important;
-  }
-
-  .index_circle {
-    height: 60px;
-    width: 60px;
   }
 
   header {
-    height: 140px !important;
+    height: 200px !important;
   }
 
   .page-container {
-    padding-top: 160px;
+    padding-top: 220px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
   }
 }
 
@@ -636,7 +614,7 @@ footer {
     width: 80px;
   }
 
-  span{
+  span {
     font-size: 1.5rem;
   }
 
@@ -645,13 +623,13 @@ footer {
   .circle_3 span,
   .circle_4 span {
     font-size: 1.5rem;
-    top: -15px; /* 원의 위쪽으로 이동 */
+    top: -15px;
   }
 
   .circle_5 span {
     font-size: 1.5rem;
-    top: -10px; /* 원의 위쪽으로 이동 */
-  } 
+    top: -10px;
+  }
 
   .contact_circle {
     height: 80px;
@@ -670,32 +648,18 @@ footer {
   }
   
   .circle_3 {
-    height: 300px;  /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 300px;   /* circle_3 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 300px;
+    width: 300px;
   }
   
   .circle_4 {
-    height: 200px;  /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
-    width: 200px;   /* circle_4 크기를 줄여서 circle_2를 벗어나지 않게 함 */
+    height: 200px;
+    width: 200px;
   }
   
   .circle_5 {
-    height: 40px;  /* 크기 조정 */
+    height: 40px;
     width: 40px;
-  }
-  
-  .footer-text {
-    font-size: 1rem;
-  }
-
-  .peanut-title {
-    font-size: 2.0rem !important;
-  }
-
-  .index_circle {
-    font-size: 1rem;
-    height: 80px;
-    width: 80px;
   }
 
   header {
@@ -704,6 +668,10 @@ footer {
 
   .page-container {
     padding-top: 160px;
+  }
+
+  .footer-text {
+    font-size: 1rem;
   }
 }
 
