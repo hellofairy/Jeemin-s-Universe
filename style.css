@@ -428,15 +428,54 @@ footer {
     font-size: 1.2rem;
   }
 
+  .circle_1 span,
+  .circle_2 span,
+  .circle_3 span,
+  .circle_4 span {
+    font-size: 2rem;
+    top: -20px;
+  }
+
+  .circle_5 span {
+    font-size: 2rem;
+    top: -15px;
+  }
+  
+  .circle_0,
+  .circle_1 {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .circle_2 {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .circle_3 {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .circle_4 {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .circle_5 {
+    height: 40px;
+    width: 40px;
+  }
+
   header {
-    height: 140px !important; /* Adjusted header height */
+    height: 180px !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .page-container {
-    padding-top: 160px; /* Increased padding to prevent content overlap */
+    padding-top: 200px;
   }
   
   .footer-text {
@@ -444,7 +483,7 @@ footer {
   }
 
   .craft-page .main-content {
-    padding-top: 20px; /* Added small padding for craft page content */
+    padding-top: 20px;
   }
 }
 
