@@ -1341,3 +1341,130 @@ html body.craft-page header .index_circle {
 html body.craft-page .index_circle span {
   font-size: 2rem !important;
 }
+
+/* ==========================================================================
+   Craft Page Header & Index Circle Responsive Styles
+   ========================================================================== */
+
+/* Base styles for craft page header */
+html body.craft-page header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important;
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Base styles for index circle */
+html body.craft-page header .index_circle {
+  position: relative !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  color: #ffadad;
+}
+
+html body.craft-page .index_circle span {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Mobile Devices (0px - 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  html body.craft-page header {
+    height: 250px !important;
+    align-items: flex-start !important;
+    padding-top: 20px !important;
+  }
+
+  html body.craft-page header .index_circle {
+    height: 150px !important;
+    width: 150px !important;
+    margin-top: 30px !important;
+  }
+
+  html body.craft-page .index_circle span {
+    font-size: 2rem !important;
+  }
+
+  /* Content adjustment for header height */
+  html body.craft-page .main-content {
+    padding-top: 270px !important;
+  }
+}
+
+/* Tablet Portrait (768px - 991px)
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  html body.craft-page header {
+    height: 250px !important;
+  }
+
+  html body.craft-page header .index_circle {
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  html body.craft-page .index_circle span {
+    font-size: 3.0rem !important;
+  }
+
+  /* Content adjustment for header height */
+  html body.craft-page .main-content {
+    padding-top: 200px !important;
+  }
+}
+
+/* Tablet Landscape (992px - 1199px)
+   ========================================================================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html body.craft-page header {
+    height: 160px !important;
+  }
+
+  html body.craft-page header .index_circle {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  html body.craft-page .index_circle span {
+    font-size: 1.6rem !important;
+  }
+
+  /* Content adjustment for header height */
+  html body.craft-page .main-content {
+    padding-top: 180px !important;
+  }
+}
+
+/* Desktop (1200px and above)
+   ========================================================================== */
+@media (min-width: 1200px) {
+  html body.craft-page header {
+    height: 140px !important;
+  }
+
+  html body.craft-page header .index_circle {
+    height: 80px !important;
+    width: 80px !important;
+  }
+
+  html body.craft-page .index_circle span {
+    font-size: 1.5rem !important;
+  }
+
+  /* Content adjustment for header height */
+  html body.craft-page .main-content {
+    padding-top: 160px !important;
+  }
+}
