@@ -24,7 +24,7 @@ a {
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 body {
@@ -1083,11 +1083,6 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.craft-page p, 
-.craft-page .bullet-points {
-  font-size: 1rem;
-}
-
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .craft-page h1 {
@@ -1124,11 +1119,7 @@ footer {
     font-size: 2.1rem;
   }
 
-  .craft-page p, 
-  .craft-page .bullet-points,
-  .craft-page i {
-    font-size: 1.15rem;
-  }
+ 
 
   .craft-page strong {
     font-size: 1.25rem;
