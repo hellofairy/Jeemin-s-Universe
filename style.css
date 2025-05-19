@@ -1349,10 +1349,6 @@ html body.craft-page .index_circle span {
     width: 150px !important;
   }
 
-  html body.craft-page .index_circle span {
-    font-size: 3.0rem !important;
-  }
-
   /* Content adjustment for header height */
   html body.craft-page .main-content {
     padding-top: 250px !important;
