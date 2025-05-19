@@ -19,6 +19,13 @@ a {
   margin-right: 5px; /* 원하는 간격으로 조절 */
 }
 
+section {
+  display: flex; /* Flexbox를 사용하여 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 (필요한 경우) */
+  flex-wrap: wrap; /* 이미지가 여러 줄로 나뉘어질 수 있도록 설정 */
+}
+
 
 * {
   margin: 0;
@@ -1038,10 +1045,6 @@ footer {
   background-color: #000000;
 }
 
-.craft-page .craft-image-section {
-  margin-bottom: 2rem;
-}
-
 .craft-page .main-content {
   flex: 1;
   display: flex;
@@ -1211,11 +1214,6 @@ body .main-content section h1 strong {
     margin-top: 0 !important;
     position: relative !important;
     z-index: 1 !important;
-  }
-  
-  body.craft-page .craft-image-section {
-    margin-top: 50px !important;
-    padding-top: 50px !important;
   }
   
   body.craft-page .page-container {
