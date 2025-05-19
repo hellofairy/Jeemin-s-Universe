@@ -419,14 +419,14 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   .contact_circle,
   .index_circle {
-    font-size: 2rem;
+    font-size: 3rem;
     height: 100px;
     width: 100px;
     margin-top: 30px;
   }
 
   .index_circle span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .craft-page header {
@@ -572,7 +572,7 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
   .contact_circle,
   .index_circle {
-    font-size: 1rem;
+    font-size: 3rem;
     height: 70px;
     width: 70px;
   }
@@ -586,7 +586,7 @@ footer {
   .circle_3 span,
   .circle_4 span,
   .circle_5 span {
-    font-size: 1rem;
+    font-size: 3rem;
     top: -15px;
   }
   
@@ -840,7 +840,7 @@ footer {
   }
 
   .index_circle span {
-    font-size: 1.2rem;
+    font-size: 3rem;
   }
 
   header {
@@ -948,7 +948,7 @@ footer {
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .craft-page .index_circle {
-    font-size: 2rem;
+    font-size: 3rem;
     height: 150px !important;
     width: 150px !important;
     margin-top: 30px;
