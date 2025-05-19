@@ -1266,15 +1266,6 @@ html body.craft-page header .index_circle {
   align-items: center !important;
 }
 
-html body.craft-page .index_circle span {
-  font-size: 1.5rem !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
 /* 모바일에서만 250px 높이와 100px index_circle */
 @media (max-width: 767px) {
   html body.craft-page header {
