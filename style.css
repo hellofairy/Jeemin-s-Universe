@@ -511,7 +511,6 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   .contact_circle,
   .index_circle {
-    font-size: 20px;
     height: 150px;
     width: 150px;
   }
@@ -863,7 +862,6 @@ footer {
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
   .index_circle {
-    font-size: 1rem;
     height: 60px;
     width: 60px;
   }
@@ -986,7 +984,6 @@ footer {
 /* 태블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
   .craft-page .index_circle {
-    font-size: 1.8rem;
     height: 80px;
     width: 80px;
   }
