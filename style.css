@@ -1038,10 +1038,6 @@ footer {
   background-color: #000000;
 }
 
-.craft-page .craft-image-section {
-  margin-bottom: 2rem;
-}
-
 .craft-page .main-content {
   flex: 1;
   display: flex;
