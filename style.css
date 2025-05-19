@@ -1197,7 +1197,7 @@ body .main-content section h1 strong {
   }
   
   body.craft-page header .index_circle span {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
 
   /* 강력한 본문 스타일링 */
@@ -1278,15 +1278,7 @@ html body.craft-page header .index_circle {
     width: 100px !important;
     margin-top: 30px !important;
   }
-
-  html body.craft-page header .index_circle span {
-    font-size: 2rem !important;
-  }
 }
-
-/* ==========================================================================
-   Craft Page Header & Index Circle Responsive Styles
-   ========================================================================== */
 
 /* Base styles for craft page header */
 html body.craft-page header {
