@@ -24,7 +24,7 @@ a {
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 body {
@@ -868,10 +868,6 @@ footer {
     width: 60px;
   }
 
-  header {
-    height: 100px;
-  }
-
   .page-container {
     padding-top: 100px;
   }
@@ -1138,10 +1134,6 @@ footer {
     font-size: 1.25rem;
   }
 
-  header {
-    height: 100px;
-  }
-
   .page-container {
     padding-top: 100px;
   }
@@ -1185,7 +1177,6 @@ footer {
 /* Override all other h1 styles */
 body .main-content section h1,
 body .main-content section h1 strong {
-  font-size: 1.5rem !important;
   font-weight: bold;
 }
 
@@ -1466,5 +1457,26 @@ html body.craft-page .index_circle span {
   /* Content adjustment for header height */
   html body.craft-page .main-content {
     padding-top: 160px !important;
+  }
+}
+
+/* Skills page mobile font sizes - High specificity */
+@media only screen and (max-width: 767px) {
+  html body .main-content section h1,
+  html body .main-content section h1 strong,
+  html body .main-content section h1 u {
+    font-size: 2.5rem !important;
+  }
+
+  html body .main-content section p strong {
+    font-size: 2rem !important;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  html body .main-content .bullet-points li,
+  html body .main-content .bullet-points li * {
+    font-size: 1.8rem !important;
+    line-height: 1.4;
   }
 }
