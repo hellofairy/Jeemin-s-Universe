@@ -102,7 +102,7 @@ function sparkle_init() {
         // create div for dot
         const tiny_div = create_div(3, 3);
         tiny_div.style.visibility = "hidden";
-        tiny_div.style.zIndex = "999";
+        tiny_div.style.zIndex = "9999";
 
         // if there's an existing dot, remove it
         if (tiny[i]) {
@@ -118,7 +118,7 @@ function sparkle_init() {
         const star_div = create_div(5, 5);
         star_div.style.backgroundColor = "transparent";
         star_div.style.visibility = "hidden";
-        star_div.style.zIndex = "999";
+        star_div.style.zIndex = "9999";
 
         // create the actual star using two more divs
         const bar_horiz = create_div(1, 5);
