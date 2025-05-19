@@ -694,6 +694,19 @@ footer {
     padding-top: 160px;
   }
 
+  html body.craft-page header .index_circle {
+    height: 80px !important;
+    width: 80px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  html body.craft-page header .index_circle span {
+    font-size: 1.5rem !important;
+  }
+
   .footer-text {
     font-size: 1rem;
   }
@@ -851,8 +864,8 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   .index_circle {
     font-size: 1rem;
-    height: 1500px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
   }
 
   header {
@@ -873,8 +886,8 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
   .index_circle {
     font-size: 1rem;
-    height: 150px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
   }
 
   header {
@@ -893,17 +906,25 @@ footer {
 /* 데스크탑 일반 */
 @media (min-width: 1200px) {
   header {
-    height: 100px;
+    height: 140px !important;
   }
 
   .page-container {
-    padding-top: 100px;
+    padding-top: 160px;
   }
 
   .index_circle {
     font-size: 1rem;
-    height: 80px;
-    width: 80px;
+    height: 80px !important;
+    width: 80px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .index_circle span {
+    font-size: 1.5rem !important;
   }
 
   .footer-text {
@@ -1126,8 +1147,8 @@ footer {
   }
 
   .index_circle {
-    height: 150px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -1156,8 +1177,8 @@ footer {
   }
 
   .index_circle {
-    height: 150px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -1234,37 +1255,12 @@ html body.craft-page .page-container {
   padding-top: 0 !important;
 }
 
-/* 모바일에서만 250px 높이 */
-@media (max-width: 767px) {
-  html body.craft-page header {
-    height: 90px !important;
-    align-items: center !important;
-  }
-}
-
-/* 태블릿 세로 및 가로 */
-@media (min-width: 768px) and (max-width: 1199px) {
-  html body.craft-page header {
-    height: 100px !important;
-    align-items: center !important;
-  }
-}
-
-/* 데스크탑 일반 */
-@media (min-width: 1200px) {
-  html body.craft-page header {
-    height: 100px !important;
-    align-items: center !important;
-  }
-}
-
 /* 모바일에서 위쪽 여백 */
 html body.craft-page .main-content {
   padding-top: 170px !important;
   margin-top: 0 !important;
 }
 
-/* 기본적인 craft.html 헤더 설정 - 모든 기기 공통 */
 html body.craft-page header {
   position: fixed !important;
   top: 0 !important;
@@ -1274,70 +1270,74 @@ html body.craft-page header {
   background-color: rgba(0, 0, 0, 0.95) !important;
   display: flex !important;
   justify-content: center !important;
+  align-items: center !important;
   padding-top: 0 !important;
 }
 
 /* 완벽한 중앙 정렬을 위한 추가 스타일 */
 html body.craft-page header .index_circle {
-  height: 100px !important;
-  width: 100px !important;
-  font-size: 2rem !important;
-  margin-top: 30px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  height: 80px !important;
+  width: 80px !important;
+  margin: 0 auto !important;
   position: relative !important;
   left: 0 !important;
   right: 0 !important;
   border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+html body.craft-page .index_circle span {
+  font-size: 1.5rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 모바일에서만 250px 높이와 100px index_circle */
+@media (max-width: 767px) {
+  html body.craft-page header {
+    height: 250px !important;
+    align-items: flex-start !important;
+  }
+  
+  html body.craft-page header .index_circle {
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: 30px !important;
+  }
+
+  html body.craft-page header .index_circle span {
+    font-size: 2rem !important;
+  }
+}
+
+/* 태블릿 및 데스크탑에서는 140px 높이 */
+@media (min-width: 768px) {
+  html body.craft-page header {
+    height: 140px !important;
+    align-items: center !important;
+  }
+}
+
+/* 완벽한 중앙 정렬을 위한 추가 스타일 */
+html body.craft-page header .index_circle {
+  height: 80px !important;
+  width: 80px !important;
+  font-size: 1.8rem !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 html body.craft-page .index_circle span {
   font-size: 2rem !important;
-}
-
-html body.craft-page .index_circle:hover {
-  background-color: rgba(255,173,173,0.6) !important;
-  transition: background-color 0.3s ease !important;
-  z-index: 8 !important;
-  color: white !important;
-}
-
-html body.craft-page .index_circle:hover span {
-  color: white !important;
-}
-
-/* 모바일에서는 90px 높이 */
-@media (max-width: 767px) {
-  html body.craft-page header {
-    height: 90px !important;
-    align-items: center !important;
-  }
-  
-  html body.craft-page .main-content {
-    padding-top: 110px !important;  /* 모바일에서 콘텐츠 여백 조정 */
-  }
-}
-
-/* 태블릿 세로 및 가로 */
-@media (min-width: 768px) and (max-width: 1199px) {
-  html body.craft-page header {
-    height: 100px !important;
-    align-items: center !important;
-  }
-  
-  html body.craft-page .main-content {
-    padding-top: 120px !important;  /* 태블릿에서 콘텐츠 여백 조정 */
-  }
-}
-
-/* 데스크탑 일반 */
-@media (min-width: 1200px) {
-  html body.craft-page header {
-    height: 100px !important;
-    align-items: center !important;
-  }
-  
-  html body.craft-page .main-content {
-    padding-top: 120px !important;  /* 데스크탑에서 콘텐츠 여백 조정 */
-  }
 }
