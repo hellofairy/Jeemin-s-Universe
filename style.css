@@ -418,14 +418,9 @@ footer {
 @media (min-width: 0px) and (max-width: 767px) {
   .contact_circle,
   .index_circle {
-    font-size: 3rem;
     height: 100px;
     width: 100px;
     margin-top: 30px;
-  }
-
-  .index_circle span {
-    font-size: 3rem;
   }
 
   .craft-page header {
@@ -833,13 +828,8 @@ footer {
 /* 모바일 */
 @media (min-width: 0px) and (max-width: 767px) {
   .index_circle {
-    font-size: 1.2rem;
     height: 70px;
     width: 70px;
-  }
-
-  .index_circle span {
-    font-size: 3rem;
   }
 
   header {
@@ -951,10 +941,6 @@ footer {
     height: 150px !important;
     width: 150px !important;
     margin-top: 30px;
-  }
-
-  .craft-page .index_circle span {
-    font-size: 2rem;
   }
 
   .craft-page header {
@@ -1187,10 +1173,7 @@ body .main-content section h1 strong {
     right: 0 !important;
     border-radius: 50% !important;
   }
-  
-  body.craft-page header .index_circle span {
-    font-size: 3rem !important;
-  }
+
 
   /* 강력한 본문 스타일링 */
   body.craft-page main.main-content,
@@ -1317,10 +1300,6 @@ html body.craft-page .index_circle span {
     height: 150px !important;
     width: 150px !important;
     margin-top: 30px !important;
-  }
-
-  html body.craft-page .index_circle span {
-    font-size: 3.0rem !important;
   }
 
   /* Content adjustment for header height */
