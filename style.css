@@ -655,6 +655,7 @@ footer {
 
   .circle_0,
   .circle_1 {
+    margin-top: 20px;
     height: 500px;
     width: 500px;
   }
